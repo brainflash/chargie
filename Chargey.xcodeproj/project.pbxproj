@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631EBCB0B44ED54E694B5CDC /* libPods-Chargey.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53A8B008F4857BAB526BB8 /* libPods-Chargey.a */; };
+		8B74210F6A1C2E9EBCB1010D /* libPods-ChargeyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E60579A13DF0A4D538EDAAD2 /* libPods-ChargeyTests.a */; };
 		CD13A873256D2D6700D6EC61 /* ChargeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A872256D2D6700D6EC61 /* ChargeyApp.swift */; };
 		CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A874256D2D6700D6EC61 /* ContentView.swift */; };
 		CD13A877256D2D6800D6EC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13A876256D2D6800D6EC61 /* Assets.xcassets */; };
 		CD13A87A256D2D6800D6EC61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13A879256D2D6800D6EC61 /* Preview Assets.xcassets */; };
 		CD13A885256D2D6800D6EC61 /* ChargeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A884256D2D6800D6EC61 /* ChargeyTests.swift */; };
 		CD13A890256D2D6800D6EC61 /* ChargeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A88F256D2D6800D6EC61 /* ChargeyUITests.swift */; };
+		CD13A8AE256D63D500D6EC61 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8AD256D63D500D6EC61 /* Store.swift */; };
+		CD13A8B3256D648600D6EC61 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8B2256D648600D6EC61 /* AppModel.swift */; };
+		CD13A8BC256D65FE00D6EC61 /* ChargeyPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8BB256D65FE00D6EC61 /* ChargeyPack.swift */; };
+		CD13A8C1256D690000D6EC61 /* ChargeyPackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8C0256D690000D6EC61 /* ChargeyPackList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23574B1F830B45EB66F5AE8F /* Pods-ChargeyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeyTests.debug.xcconfig"; path = "Target Support Files/Pods-ChargeyTests/Pods-ChargeyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4709E1501BA34A36710731EB /* Pods-Chargey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargey.debug.xcconfig"; path = "Target Support Files/Pods-Chargey/Pods-Chargey.debug.xcconfig"; sourceTree = "<group>"; };
+		4EEF883F819465BB441B1C97 /* Pods-ChargeyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeyTests.release.xcconfig"; path = "Target Support Files/Pods-ChargeyTests/Pods-ChargeyTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D53A8B008F4857BAB526BB8 /* libPods-Chargey.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Chargey.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD13A86F256D2D6700D6EC61 /* Chargey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chargey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD13A872256D2D6700D6EC61 /* ChargeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyApp.swift; sourceTree = "<group>"; };
 		CD13A874256D2D6700D6EC61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +55,12 @@
 		CD13A88B256D2D6800D6EC61 /* ChargeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD13A88F256D2D6800D6EC61 /* ChargeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyUITests.swift; sourceTree = "<group>"; };
 		CD13A891256D2D6800D6EC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD13A8AD256D63D500D6EC61 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		CD13A8B2256D648600D6EC61 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		CD13A8BB256D65FE00D6EC61 /* ChargeyPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyPack.swift; sourceTree = "<group>"; };
+		CD13A8C0256D690000D6EC61 /* ChargeyPackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyPackList.swift; sourceTree = "<group>"; };
+		CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargey.release.xcconfig"; path = "Target Support Files/Pods-Chargey/Pods-Chargey.release.xcconfig"; sourceTree = "<group>"; };
+		E60579A13DF0A4D538EDAAD2 /* libPods-ChargeyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChargeyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631EBCB0B44ED54E694B5CDC /* libPods-Chargey.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B74210F6A1C2E9EBCB1010D /* libPods-ChargeyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +90,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2555CCBAEC9E8596F4450BDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4709E1501BA34A36710731EB /* Pods-Chargey.debug.xcconfig */,
+				CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */,
+				23574B1F830B45EB66F5AE8F /* Pods-ChargeyTests.debug.xcconfig */,
+				4EEF883F819465BB441B1C97 /* Pods-ChargeyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		572BC763C47AF2F856F8C820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D53A8B008F4857BAB526BB8 /* libPods-Chargey.a */,
+				E60579A13DF0A4D538EDAAD2 /* libPods-ChargeyTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD13A866256D2D6700D6EC61 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +117,8 @@
 				CD13A883256D2D6800D6EC61 /* ChargeyTests */,
 				CD13A88E256D2D6800D6EC61 /* ChargeyUITests */,
 				CD13A870256D2D6700D6EC61 /* Products */,
+				2555CCBAEC9E8596F4450BDE /* Pods */,
+				572BC763C47AF2F856F8C820 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +135,8 @@
 		CD13A871256D2D6700D6EC61 /* Chargey */ = {
 			isa = PBXGroup;
 			children = (
+				CD13A8AC256D63BF00D6EC61 /* Model */,
+				CD13A8BA256D65EE00D6EC61 /* ChargeyPack */,
 				CD13A872256D2D6700D6EC61 /* ChargeyApp.swift */,
 				CD13A874256D2D6700D6EC61 /* ContentView.swift */,
 				CD13A876256D2D6800D6EC61 /* Assets.xcassets */,
@@ -130,6 +172,24 @@
 			path = ChargeyUITests;
 			sourceTree = "<group>";
 		};
+		CD13A8AC256D63BF00D6EC61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD13A8B2256D648600D6EC61 /* AppModel.swift */,
+				CD13A8AD256D63D500D6EC61 /* Store.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD13A8BA256D65EE00D6EC61 /* ChargeyPack */ = {
+			isa = PBXGroup;
+			children = (
+				CD13A8BB256D65FE00D6EC61 /* ChargeyPack.swift */,
+				CD13A8C0256D690000D6EC61 /* ChargeyPackList.swift */,
+			);
+			path = ChargeyPack;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD13A894256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "Chargey" */;
 			buildPhases = (
+				12CBE55FBA0F250E9D64A92F /* [CP] Check Pods Manifest.lock */,
 				CD13A86B256D2D6700D6EC61 /* Sources */,
 				CD13A86C256D2D6700D6EC61 /* Frameworks */,
 				CD13A86D256D2D6700D6EC61 /* Resources */,
@@ -154,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD13A897256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "ChargeyTests" */;
 			buildPhases = (
+				18147F101A16AA1FAC1569F3 /* [CP] Check Pods Manifest.lock */,
 				CD13A87C256D2D6800D6EC61 /* Sources */,
 				CD13A87D256D2D6800D6EC61 /* Frameworks */,
 				CD13A87E256D2D6800D6EC61 /* Resources */,
@@ -254,13 +316,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12CBE55FBA0F250E9D64A92F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chargey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18147F101A16AA1FAC1569F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChargeyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD13A86B256D2D6700D6EC61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD13A8C1256D690000D6EC61 /* ChargeyPackList.swift in Sources */,
+				CD13A8BC256D65FE00D6EC61 /* ChargeyPack.swift in Sources */,
+				CD13A8AE256D63D500D6EC61 /* Store.swift in Sources */,
 				CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */,
 				CD13A873256D2D6700D6EC61 /* ChargeyApp.swift in Sources */,
+				CD13A8B3256D648600D6EC61 /* AppModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,12 +527,14 @@
 		};
 		CD13A895256D2D6800D6EC61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4709E1501BA34A36710731EB /* Pods-Chargey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Chargey/Preview Content\"";
-				DEVELOPMENT_TEAM = NY4WQPDWDV;
+				DEVELOPMENT_TEAM = 982NC82DH4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chargey/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -427,8 +542,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brainflash.Chargey;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chargey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Chargey Dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -436,12 +552,14 @@
 		};
 		CD13A896256D2D6800D6EC61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Chargey/Preview Content\"";
-				DEVELOPMENT_TEAM = NY4WQPDWDV;
+				DEVELOPMENT_TEAM = 982NC82DH4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chargey/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -449,8 +567,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brainflash.Chargey;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chargey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Chargey Dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,6 +577,7 @@
 		};
 		CD13A898256D2D6800D6EC61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23574B1F830B45EB66F5AE8F /* Pods-ChargeyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +600,7 @@
 		};
 		CD13A899256D2D6800D6EC61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EEF883F819465BB441B1C97 /* Pods-ChargeyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
