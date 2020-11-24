@@ -19,6 +19,14 @@
 		CD13A8B3256D648600D6EC61 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8B2256D648600D6EC61 /* AppModel.swift */; };
 		CD13A8BC256D65FE00D6EC61 /* ChargeyPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8BB256D65FE00D6EC61 /* ChargeyPack.swift */; };
 		CD13A8C1256D690000D6EC61 /* ChargeyPackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8C0256D690000D6EC61 /* ChargeyPackList.swift */; };
+		CD13A8DF256D78E000D6EC61 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8DE256D78E000D6EC61 /* IntentHandler.swift */; };
+		CD13A8E3256D78E000D6EC61 /* ChargingAnimation.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD13A8DC256D78E000D6EC61 /* ChargingAnimation.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD13A924256D7F4800D6EC61 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */; };
+		CD13A925256D7F4800D6EC61 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */; };
+		CD13A933256D807A00D6EC61 /* AnimationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A932256D807A00D6EC61 /* AnimationIntentHandler.swift */; };
+		CD13A934256D807A00D6EC61 /* AnimationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A932256D807A00D6EC61 /* AnimationIntentHandler.swift */; };
+		CD13A957256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */; };
+		CD13A958256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,28 @@
 			remoteGlobalIDString = CD13A86E256D2D6700D6EC61;
 			remoteInfo = Chargey;
 		};
+		CD13A8E1256D78E000D6EC61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD13A867256D2D6700D6EC61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD13A8DB256D78E000D6EC61;
+			remoteInfo = Animation;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD13A8E7256D78E000D6EC61 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD13A8E3256D78E000D6EC61 /* ChargingAnimation.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		23574B1F830B45EB66F5AE8F /* Pods-ChargeyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeyTests.debug.xcconfig"; path = "Target Support Files/Pods-ChargeyTests/Pods-ChargeyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +88,14 @@
 		CD13A8B2256D648600D6EC61 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		CD13A8BB256D65FE00D6EC61 /* ChargeyPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyPack.swift; sourceTree = "<group>"; };
 		CD13A8C0256D690000D6EC61 /* ChargeyPackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyPackList.swift; sourceTree = "<group>"; };
+		CD13A8D1256D770200D6EC61 /* Chargey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chargey.entitlements; sourceTree = "<group>"; };
+		CD13A8DC256D78E000D6EC61 /* ChargingAnimation.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChargingAnimation.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD13A8DE256D78E000D6EC61 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		CD13A8E0256D78E000D6EC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD13A90F256D7EA400D6EC61 /* ChargingAnimation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChargingAnimation.entitlements; sourceTree = "<group>"; };
+		CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		CD13A932256D807A00D6EC61 /* AnimationIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationIntentHandler.swift; sourceTree = "<group>"; };
+		CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+IntentData.swift"; sourceTree = "<group>"; };
 		CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargey.release.xcconfig"; path = "Target Support Files/Pods-Chargey/Pods-Chargey.release.xcconfig"; sourceTree = "<group>"; };
 		E60579A13DF0A4D538EDAAD2 /* libPods-ChargeyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChargeyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +118,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD13A888256D2D6800D6EC61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD13A8D9256D78E000D6EC61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -113,7 +157,10 @@
 		CD13A866256D2D6700D6EC61 = {
 			isa = PBXGroup;
 			children = (
+				CD13A922256D7F2E00D6EC61 /* Shared */,
+				CD13A90F256D7EA400D6EC61 /* ChargingAnimation.entitlements */,
 				CD13A871256D2D6700D6EC61 /* Chargey */,
+				CD13A8DD256D78E000D6EC61 /* ChargingAnimation */,
 				CD13A883256D2D6800D6EC61 /* ChargeyTests */,
 				CD13A88E256D2D6800D6EC61 /* ChargeyUITests */,
 				CD13A870256D2D6700D6EC61 /* Products */,
@@ -128,6 +175,7 @@
 				CD13A86F256D2D6700D6EC61 /* Chargey.app */,
 				CD13A880256D2D6800D6EC61 /* ChargeyTests.xctest */,
 				CD13A88B256D2D6800D6EC61 /* ChargeyUITests.xctest */,
+				CD13A8DC256D78E000D6EC61 /* ChargingAnimation.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +183,7 @@
 		CD13A871256D2D6700D6EC61 /* Chargey */ = {
 			isa = PBXGroup;
 			children = (
+				CD13A8D1256D770200D6EC61 /* Chargey.entitlements */,
 				CD13A8AC256D63BF00D6EC61 /* Model */,
 				CD13A8BA256D65EE00D6EC61 /* ChargeyPack */,
 				CD13A872256D2D6700D6EC61 /* ChargeyApp.swift */,
@@ -190,6 +239,33 @@
 			path = ChargeyPack;
 			sourceTree = "<group>";
 		};
+		CD13A8DD256D78E000D6EC61 /* ChargingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				CD13A8DE256D78E000D6EC61 /* IntentHandler.swift */,
+				CD13A932256D807A00D6EC61 /* AnimationIntentHandler.swift */,
+				CD13A8E0256D78E000D6EC61 /* Info.plist */,
+			);
+			path = ChargingAnimation;
+			sourceTree = "<group>";
+		};
+		CD13A922256D7F2E00D6EC61 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CD13A955256D901400D6EC61 /* Support */,
+				CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CD13A955256D901400D6EC61 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,10 +277,12 @@
 				CD13A86B256D2D6700D6EC61 /* Sources */,
 				CD13A86C256D2D6700D6EC61 /* Frameworks */,
 				CD13A86D256D2D6700D6EC61 /* Resources */,
+				CD13A8E7256D78E000D6EC61 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CD13A8E2256D78E000D6EC61 /* PBXTargetDependency */,
 			);
 			name = Chargey;
 			productName = Chargey;
@@ -248,6 +326,23 @@
 			productReference = CD13A88B256D2D6800D6EC61 /* ChargeyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CD13A8DB256D78E000D6EC61 /* ChargingAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD13A8E4256D78E000D6EC61 /* Build configuration list for PBXNativeTarget "ChargingAnimation" */;
+			buildPhases = (
+				CD13A8D8256D78E000D6EC61 /* Sources */,
+				CD13A8D9256D78E000D6EC61 /* Frameworks */,
+				CD13A8DA256D78E000D6EC61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChargingAnimation;
+			productName = Animation;
+			productReference = CD13A8DC256D78E000D6EC61 /* ChargingAnimation.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -268,6 +363,9 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = CD13A86E256D2D6700D6EC61;
 					};
+					CD13A8DB256D78E000D6EC61 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = CD13A86A256D2D6700D6EC61 /* Build configuration list for PBXProject "Chargey" */;
@@ -284,6 +382,7 @@
 			projectRoot = "";
 			targets = (
 				CD13A86E256D2D6700D6EC61 /* Chargey */,
+				CD13A8DB256D78E000D6EC61 /* ChargingAnimation */,
 				CD13A87F256D2D6800D6EC61 /* ChargeyTests */,
 				CD13A88A256D2D6800D6EC61 /* ChargeyUITests */,
 			);
@@ -308,6 +407,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD13A889256D2D6800D6EC61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD13A8DA256D78E000D6EC61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,7 +474,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD13A924256D7F4800D6EC61 /* Intents.intentdefinition in Sources */,
 				CD13A8C1256D690000D6EC61 /* ChargeyPackList.swift in Sources */,
+				CD13A933256D807A00D6EC61 /* AnimationIntentHandler.swift in Sources */,
+				CD13A957256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */,
 				CD13A8BC256D65FE00D6EC61 /* ChargeyPack.swift in Sources */,
 				CD13A8AE256D63D500D6EC61 /* Store.swift in Sources */,
 				CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */,
@@ -393,6 +502,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD13A8D8256D78E000D6EC61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD13A934256D807A00D6EC61 /* AnimationIntentHandler.swift in Sources */,
+				CD13A925256D7F4800D6EC61 /* Intents.intentdefinition in Sources */,
+				CD13A958256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */,
+				CD13A8DF256D78E000D6EC61 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -405,6 +525,11 @@
 			isa = PBXTargetDependency;
 			target = CD13A86E256D2D6700D6EC61 /* Chargey */;
 			targetProxy = CD13A88C256D2D6800D6EC61 /* PBXContainerItemProxy */;
+		};
+		CD13A8E2256D78E000D6EC61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD13A8DB256D78E000D6EC61 /* ChargingAnimation */;
+			targetProxy = CD13A8E1256D78E000D6EC61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -529,8 +654,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4709E1501BA34A36710731EB /* Pods-Chargey.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Chargey/Chargey.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Chargey/Preview Content\"";
@@ -554,8 +681,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Chargey/Chargey.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Chargey/Preview Content\"";
@@ -661,6 +790,50 @@
 			};
 			name = Release;
 		};
+		CD13A8E5256D78E000D6EC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ChargingAnimation.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 982NC82DH4;
+				INFOPLIST_FILE = ChargingAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.chargey.animation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Chargey Dev Animation Intent";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD13A8E6256D78E000D6EC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ChargingAnimation.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 982NC82DH4;
+				INFOPLIST_FILE = ChargingAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.chargey.animation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Chargey Dev Animation Intent";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -696,6 +869,15 @@
 			buildConfigurations = (
 				CD13A89B256D2D6800D6EC61 /* Debug */,
 				CD13A89C256D2D6800D6EC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD13A8E4256D78E000D6EC61 /* Build configuration list for PBXNativeTarget "ChargingAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD13A8E5256D78E000D6EC61 /* Debug */,
+				CD13A8E6256D78E000D6EC61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -12,6 +12,10 @@ struct ChargeyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+				.onContinueUserActivity(NSUserActivity.ChargingAnimationType) { activity in
+					print ("Charging Animation Activity: \(activity)")
+					
+				}
         }
     }
 }
