@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		631EBCB0B44ED54E694B5CDC /* libPods-Chargey.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53A8B008F4857BAB526BB8 /* libPods-Chargey.a */; };
 		8B74210F6A1C2E9EBCB1010D /* libPods-ChargeyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E60579A13DF0A4D538EDAAD2 /* libPods-ChargeyTests.a */; };
-		CD13A873256D2D6700D6EC61 /* ChargeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A872256D2D6700D6EC61 /* ChargeyApp.swift */; };
+		CD13A873256D2D6700D6EC61 /* ChargieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A872256D2D6700D6EC61 /* ChargieApp.swift */; };
 		CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A874256D2D6700D6EC61 /* ContentView.swift */; };
 		CD13A877256D2D6800D6EC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13A876256D2D6800D6EC61 /* Assets.xcassets */; };
 		CD13A87A256D2D6800D6EC61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13A879256D2D6800D6EC61 /* Preview Assets.xcassets */; };
@@ -17,8 +17,8 @@
 		CD13A890256D2D6800D6EC61 /* ChargeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A88F256D2D6800D6EC61 /* ChargeyUITests.swift */; };
 		CD13A8AE256D63D500D6EC61 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8AD256D63D500D6EC61 /* Store.swift */; };
 		CD13A8B3256D648600D6EC61 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8B2256D648600D6EC61 /* AppModel.swift */; };
-		CD13A8BC256D65FE00D6EC61 /* ChargeyPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8BB256D65FE00D6EC61 /* ChargeyPack.swift */; };
-		CD13A8C1256D690000D6EC61 /* ChargeyPackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8C0256D690000D6EC61 /* ChargeyPackList.swift */; };
+		CD13A8BC256D65FE00D6EC61 /* ChargiePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8BB256D65FE00D6EC61 /* ChargiePack.swift */; };
+		CD13A8C1256D690000D6EC61 /* ChargiePackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8C0256D690000D6EC61 /* ChargiePackList.swift */; };
 		CD13A8DF256D78E000D6EC61 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8DE256D78E000D6EC61 /* IntentHandler.swift */; };
 		CD13A8E3256D78E000D6EC61 /* ChargingAnimation.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD13A8DC256D78E000D6EC61 /* ChargingAnimation.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CD13A924256D7F4800D6EC61 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */; };
@@ -76,22 +76,22 @@
 		4709E1501BA34A36710731EB /* Pods-Chargey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargey.debug.xcconfig"; path = "Target Support Files/Pods-Chargey/Pods-Chargey.debug.xcconfig"; sourceTree = "<group>"; };
 		4EEF883F819465BB441B1C97 /* Pods-ChargeyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeyTests.release.xcconfig"; path = "Target Support Files/Pods-ChargeyTests/Pods-ChargeyTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D53A8B008F4857BAB526BB8 /* libPods-Chargey.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Chargey.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD13A86F256D2D6700D6EC61 /* Chargey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chargey.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD13A872256D2D6700D6EC61 /* ChargeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyApp.swift; sourceTree = "<group>"; };
+		CD13A86F256D2D6700D6EC61 /* Chargie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chargie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD13A872256D2D6700D6EC61 /* ChargieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargieApp.swift; sourceTree = "<group>"; };
 		CD13A874256D2D6700D6EC61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD13A876256D2D6800D6EC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD13A879256D2D6800D6EC61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD13A87B256D2D6800D6EC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD13A880256D2D6800D6EC61 /* ChargeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD13A880256D2D6800D6EC61 /* ChargieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD13A884256D2D6800D6EC61 /* ChargeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyTests.swift; sourceTree = "<group>"; };
 		CD13A886256D2D6800D6EC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD13A88B256D2D6800D6EC61 /* ChargeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD13A88B256D2D6800D6EC61 /* ChargieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD13A88F256D2D6800D6EC61 /* ChargeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyUITests.swift; sourceTree = "<group>"; };
 		CD13A891256D2D6800D6EC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD13A8AD256D63D500D6EC61 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CD13A8B2256D648600D6EC61 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		CD13A8BB256D65FE00D6EC61 /* ChargeyPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyPack.swift; sourceTree = "<group>"; };
-		CD13A8C0256D690000D6EC61 /* ChargeyPackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeyPackList.swift; sourceTree = "<group>"; };
+		CD13A8BB256D65FE00D6EC61 /* ChargiePack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargiePack.swift; sourceTree = "<group>"; };
+		CD13A8C0256D690000D6EC61 /* ChargiePackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargiePackList.swift; sourceTree = "<group>"; };
 		CD13A8D1256D770200D6EC61 /* Chargey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chargey.entitlements; sourceTree = "<group>"; };
 		CD13A8DC256D78E000D6EC61 /* ChargingAnimation.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChargingAnimation.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD13A8DE256D78E000D6EC61 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -179,9 +179,9 @@
 		CD13A870256D2D6700D6EC61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD13A86F256D2D6700D6EC61 /* Chargey.app */,
-				CD13A880256D2D6800D6EC61 /* ChargeyTests.xctest */,
-				CD13A88B256D2D6800D6EC61 /* ChargeyUITests.xctest */,
+				CD13A86F256D2D6700D6EC61 /* Chargie.app */,
+				CD13A880256D2D6800D6EC61 /* ChargieTests.xctest */,
+				CD13A88B256D2D6800D6EC61 /* ChargieUITests.xctest */,
 				CD13A8DC256D78E000D6EC61 /* ChargingAnimation.appex */,
 			);
 			name = Products;
@@ -194,8 +194,8 @@
 				CD13A9C8256DEE7D00D6EC61 /* Support */,
 				CD13A8D1256D770200D6EC61 /* Chargey.entitlements */,
 				CD13A8AC256D63BF00D6EC61 /* Model */,
-				CD13A8BA256D65EE00D6EC61 /* ChargeyPack */,
-				CD13A872256D2D6700D6EC61 /* ChargeyApp.swift */,
+				CD13A8BA256D65EE00D6EC61 /* ChargiePack */,
+				CD13A872256D2D6700D6EC61 /* ChargieApp.swift */,
 				CD13A874256D2D6700D6EC61 /* ContentView.swift */,
 				CD13A876256D2D6800D6EC61 /* Assets.xcassets */,
 				CD13A9F4256E3FA400D6EC61 /* Animations.xcassets */,
@@ -240,13 +240,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CD13A8BA256D65EE00D6EC61 /* ChargeyPack */ = {
+		CD13A8BA256D65EE00D6EC61 /* ChargiePack */ = {
 			isa = PBXGroup;
 			children = (
-				CD13A8BB256D65FE00D6EC61 /* ChargeyPack.swift */,
-				CD13A8C0256D690000D6EC61 /* ChargeyPackList.swift */,
+				CD13A8BB256D65FE00D6EC61 /* ChargiePack.swift */,
+				CD13A8C0256D690000D6EC61 /* ChargiePackList.swift */,
 			);
-			path = ChargeyPack;
+			path = ChargiePack;
 			sourceTree = "<group>";
 		};
 		CD13A8DD256D78E000D6EC61 /* ChargingAnimation */ = {
@@ -287,9 +287,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD13A86E256D2D6700D6EC61 /* Chargey */ = {
+		CD13A86E256D2D6700D6EC61 /* Chargie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD13A894256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "Chargey" */;
+			buildConfigurationList = CD13A894256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "Chargie" */;
 			buildPhases = (
 				12CBE55FBA0F250E9D64A92F /* [CP] Check Pods Manifest.lock */,
 				CD13A86B256D2D6700D6EC61 /* Sources */,
@@ -302,14 +302,14 @@
 			dependencies = (
 				CD13A8E2256D78E000D6EC61 /* PBXTargetDependency */,
 			);
-			name = Chargey;
+			name = Chargie;
 			productName = Chargey;
-			productReference = CD13A86F256D2D6700D6EC61 /* Chargey.app */;
+			productReference = CD13A86F256D2D6700D6EC61 /* Chargie.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CD13A87F256D2D6800D6EC61 /* ChargeyTests */ = {
+		CD13A87F256D2D6800D6EC61 /* ChargieTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD13A897256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "ChargeyTests" */;
+			buildConfigurationList = CD13A897256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "ChargieTests" */;
 			buildPhases = (
 				18147F101A16AA1FAC1569F3 /* [CP] Check Pods Manifest.lock */,
 				CD13A87C256D2D6800D6EC61 /* Sources */,
@@ -321,14 +321,14 @@
 			dependencies = (
 				CD13A882256D2D6800D6EC61 /* PBXTargetDependency */,
 			);
-			name = ChargeyTests;
+			name = ChargieTests;
 			productName = ChargeyTests;
-			productReference = CD13A880256D2D6800D6EC61 /* ChargeyTests.xctest */;
+			productReference = CD13A880256D2D6800D6EC61 /* ChargieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CD13A88A256D2D6800D6EC61 /* ChargeyUITests */ = {
+		CD13A88A256D2D6800D6EC61 /* ChargieUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD13A89A256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "ChargeyUITests" */;
+			buildConfigurationList = CD13A89A256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "ChargieUITests" */;
 			buildPhases = (
 				CD13A887256D2D6800D6EC61 /* Sources */,
 				CD13A888256D2D6800D6EC61 /* Frameworks */,
@@ -339,9 +339,9 @@
 			dependencies = (
 				CD13A88D256D2D6800D6EC61 /* PBXTargetDependency */,
 			);
-			name = ChargeyUITests;
+			name = ChargieUITests;
 			productName = ChargeyUITests;
-			productReference = CD13A88B256D2D6800D6EC61 /* ChargeyUITests.xctest */;
+			productReference = CD13A88B256D2D6800D6EC61 /* ChargieUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		CD13A8DB256D78E000D6EC61 /* ChargingAnimation */ = {
@@ -386,7 +386,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD13A86A256D2D6700D6EC61 /* Build configuration list for PBXProject "Chargey" */;
+			buildConfigurationList = CD13A86A256D2D6700D6EC61 /* Build configuration list for PBXProject "Chargie" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -399,10 +399,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD13A86E256D2D6700D6EC61 /* Chargey */,
+				CD13A86E256D2D6700D6EC61 /* Chargie */,
 				CD13A8DB256D78E000D6EC61 /* ChargingAnimation */,
-				CD13A87F256D2D6800D6EC61 /* ChargeyTests */,
-				CD13A88A256D2D6800D6EC61 /* ChargeyUITests */,
+				CD13A87F256D2D6800D6EC61 /* ChargieTests */,
+				CD13A88A256D2D6800D6EC61 /* ChargieUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -497,13 +497,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD13A924256D7F4800D6EC61 /* Intents.intentdefinition in Sources */,
-				CD13A8C1256D690000D6EC61 /* ChargeyPackList.swift in Sources */,
+				CD13A8C1256D690000D6EC61 /* ChargiePackList.swift in Sources */,
 				CD13A9CA256DEE9E00D6EC61 /* LottieView.swift in Sources */,
 				CD13A957256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */,
-				CD13A8BC256D65FE00D6EC61 /* ChargeyPack.swift in Sources */,
+				CD13A8BC256D65FE00D6EC61 /* ChargiePack.swift in Sources */,
 				CD13A8AE256D63D500D6EC61 /* Store.swift in Sources */,
 				CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */,
-				CD13A873256D2D6700D6EC61 /* ChargeyApp.swift in Sources */,
+				CD13A873256D2D6700D6EC61 /* ChargieApp.swift in Sources */,
 				CD13A8B3256D648600D6EC61 /* AppModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,12 +540,12 @@
 /* Begin PBXTargetDependency section */
 		CD13A882256D2D6800D6EC61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD13A86E256D2D6700D6EC61 /* Chargey */;
+			target = CD13A86E256D2D6700D6EC61 /* Chargie */;
 			targetProxy = CD13A881256D2D6800D6EC61 /* PBXContainerItemProxy */;
 		};
 		CD13A88D256D2D6800D6EC61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD13A86E256D2D6700D6EC61 /* Chargey */;
+			target = CD13A86E256D2D6700D6EC61 /* Chargie */;
 			targetProxy = CD13A88C256D2D6800D6EC61 /* PBXContainerItemProxy */;
 		};
 		CD13A8E2256D78E000D6EC61 /* PBXTargetDependency */ = {
@@ -745,7 +745,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargey.app/Chargey";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargie.app/Chargie";
 			};
 			name = Debug;
 		};
@@ -768,7 +768,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargey.app/Chargey";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chargie.app/Chargie";
 			};
 			name = Release;
 		};
@@ -859,7 +859,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD13A86A256D2D6700D6EC61 /* Build configuration list for PBXProject "Chargey" */ = {
+		CD13A86A256D2D6700D6EC61 /* Build configuration list for PBXProject "Chargie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD13A892256D2D6800D6EC61 /* Debug */,
@@ -868,7 +868,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD13A894256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "Chargey" */ = {
+		CD13A894256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "Chargie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD13A895256D2D6800D6EC61 /* Debug */,
@@ -877,7 +877,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD13A897256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "ChargeyTests" */ = {
+		CD13A897256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "ChargieTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD13A898256D2D6800D6EC61 /* Debug */,
@@ -886,7 +886,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD13A89A256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "ChargeyUITests" */ = {
+		CD13A89A256D2D6800D6EC61 /* Build configuration list for PBXNativeTarget "ChargieUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD13A89B256D2D6800D6EC61 /* Debug */,

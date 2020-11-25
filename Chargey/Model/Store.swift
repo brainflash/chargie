@@ -1,6 +1,6 @@
 //
 //  Store.swift
-//  Chargey
+//  Chargie
 //
 //  Created by Brainflash on 24/11/2020.
 //
@@ -12,17 +12,17 @@ typealias PurchaseCompletionHandler = ((SKPaymentTransaction?) -> Void)
 
 class Store: NSObject, ObservableObject {
 	
-	// Array of productChargeyPacks, from fetchProducts call
-	@Published var productChargeyPacks: [SKProduct]?
+	// Array of productChargiePacks, from fetchProducts call
+	@Published var productChargiePacks: [SKProduct]?
 
 	private var model: AppModel?
 	
 	private let allProductIdentifiers = Set([
-		Store.ProductIdentifier.ChargeyPack1,
-		Store.ProductIdentifier.ChargeyPack2,
-		Store.ProductIdentifier.ChargeyPack3,
-		Store.ProductIdentifier.ChargeyPack4,
-		Store.ProductIdentifier.ChargeyPack5
+		Store.ProductIdentifier.ChargiePack1,
+		Store.ProductIdentifier.ChargiePack2,
+		Store.ProductIdentifier.ChargiePack3,
+		Store.ProductIdentifier.ChargiePack4,
+		Store.ProductIdentifier.ChargiePack5
 	])
 	
 	private var completedPurchases = [String]()
@@ -38,7 +38,7 @@ class Store: NSObject, ObservableObject {
 		startObservingPaymentQueue()
 		fetchProducts { [weak self] products in
 			guard let self = self else { return }
-			self.productChargeyPacks = products.filter { self.allProductIdentifiers.contains($0.productIdentifier) }
+			self.productChargiePacks = products.filter { self.allProductIdentifiers.contains($0.productIdentifier) }
 		}
 	}
 	
@@ -51,20 +51,20 @@ class Store: NSObject, ObservableObject {
 
 extension Store {
 	struct ProductIdentifier {
-		static let AllPacks = "app.chargey.allsets"
-		static let ChargeyPack1	= "app.chargey.pack1"
-		static let ChargeyPack2	= "app.chargey.pack2"
-		static let ChargeyPack3	= "app.chargey.pack3"
-		static let ChargeyPack4	= "app.chargey.pack4"
-		static let ChargeyPack5	= "app.chargey.pack5"
+		static let AllPacks = "app.chargie.allsets"
+		static let ChargiePack1	= "app.chargie.pack1"
+		static let ChargiePack2	= "app.chargie.pack2"
+		static let ChargiePack3	= "app.chargie.pack3"
+		static let ChargiePack4	= "app.chargie.pack4"
+		static let ChargiePack5	= "app.chargie.pack5"
 
 		static let all: [String] = [
 			AllPacks,
-			ChargeyPack1,
-			ChargeyPack2,
-			ChargeyPack3,
-			ChargeyPack4,
-			ChargeyPack5
+			ChargiePack1,
+			ChargiePack2,
+			ChargiePack3,
+			ChargiePack4,
+			ChargiePack5
 		]
 	}
 	
@@ -85,8 +85,8 @@ extension Store {
 			   transaction.transactionState == .purchased {
 
 				if let model = self.model {
-					if let chargeyPack = model.chargeyPacks.first(where: { $0.id == transaction.payment.productIdentifier }) {
-						chargeyPack.unlock()
+					if let chargiePack = model.chargiePacks.first(where: { $0.id == transaction.payment.productIdentifier }) {
+						chargiePack.unlock()
 					}
 				}
 			}
@@ -164,7 +164,7 @@ extension Store: SKPaymentTransactionObserver {
 		DispatchQueue.main.async {
 			ProductIdentifier.all.forEach { identifier in
 				if let model = self.model {
-					if let chargeyPack = model.chargeyPacks.first(where: { $0.id == identifier }) {
+					if let chargeyPack = model.chargiePacks.first(where: { $0.id == identifier }) {
 						chargeyPack.lock()
 					}
 				}

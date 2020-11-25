@@ -1,13 +1,13 @@
 //
-//  ChargeyPack.swift
-//  Chargey
+//  ChargiePack.swift
+//  Chargie
 //
 //  Created by Brainflash on 24/11/2020.
 //
 
 import Foundation
 
-class ChargeyPack: ObservableObject, Identifiable {
+class ChargiePack: ObservableObject, Identifiable {
 	/// isLocked is false when pack is free or user has purchased the pack
 	@Published var isLocked = false
 	
@@ -20,7 +20,7 @@ class ChargeyPack: ObservableObject, Identifiable {
 
 // MARK: - API
 
-extension ChargeyPack {
+extension ChargiePack {
 	
 	func lock() {
 		isLocked = true

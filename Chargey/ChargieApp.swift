@@ -1,6 +1,6 @@
 //
-//  ChargeyApp.swift
-//  Chargey
+//  ChargieApp.swift
+//  Chargie
 //
 //  Created by Brainflash on 24/11/2020.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ChargeyApp: App {
+struct ChargieApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

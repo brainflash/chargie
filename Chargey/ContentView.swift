@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Chargey
+//  Chargie
 //
 //  Created by Brainflash on 24/11/2020.
 //
@@ -16,7 +16,6 @@ struct ContentView: View {
 				.frame(width: 300, height: 300)
 			Button("Play") { self.play.toggle() }
 		}
-		.
 		.background(Color.black)
     }
 }
