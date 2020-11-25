@@ -23,10 +23,14 @@
 		CD13A8E3256D78E000D6EC61 /* ChargingAnimation.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD13A8DC256D78E000D6EC61 /* ChargingAnimation.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CD13A924256D7F4800D6EC61 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */; };
 		CD13A925256D7F4800D6EC61 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */; };
-		CD13A933256D807A00D6EC61 /* AnimationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A932256D807A00D6EC61 /* AnimationIntentHandler.swift */; };
 		CD13A934256D807A00D6EC61 /* AnimationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A932256D807A00D6EC61 /* AnimationIntentHandler.swift */; };
 		CD13A957256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */; };
 		CD13A958256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */; };
+		CD13A9CA256DEE9E00D6EC61 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A9C9256DEE9E00D6EC61 /* LottieView.swift */; };
+		CD13A9F5256E3FA400D6EC61 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13A9F4256E3FA400D6EC61 /* Animations.xcassets */; };
+		CD13A9F6256E3FA400D6EC61 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13A9F4256E3FA400D6EC61 /* Animations.xcassets */; };
+		CD13A9FC256E3FAE00D6EC61 /* 36318-cat-preloader.json in Resources */ = {isa = PBXBuildFile; fileRef = CD13A9FB256E3FAE00D6EC61 /* 36318-cat-preloader.json */; };
+		CD13A9FD256E3FAE00D6EC61 /* 36318-cat-preloader.json in Resources */ = {isa = PBXBuildFile; fileRef = CD13A9FB256E3FAE00D6EC61 /* 36318-cat-preloader.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,9 @@
 		CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		CD13A932256D807A00D6EC61 /* AnimationIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationIntentHandler.swift; sourceTree = "<group>"; };
 		CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+IntentData.swift"; sourceTree = "<group>"; };
+		CD13A9C9256DEE9E00D6EC61 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		CD13A9F4256E3FA400D6EC61 /* Animations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animations.xcassets; sourceTree = "<group>"; };
+		CD13A9FB256E3FAE00D6EC61 /* 36318-cat-preloader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "36318-cat-preloader.json"; sourceTree = "<group>"; };
 		CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargey.release.xcconfig"; path = "Target Support Files/Pods-Chargey/Pods-Chargey.release.xcconfig"; sourceTree = "<group>"; };
 		E60579A13DF0A4D538EDAAD2 /* libPods-ChargeyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChargeyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -183,12 +190,15 @@
 		CD13A871256D2D6700D6EC61 /* Chargey */ = {
 			isa = PBXGroup;
 			children = (
+				CD13A9FB256E3FAE00D6EC61 /* 36318-cat-preloader.json */,
+				CD13A9C8256DEE7D00D6EC61 /* Support */,
 				CD13A8D1256D770200D6EC61 /* Chargey.entitlements */,
 				CD13A8AC256D63BF00D6EC61 /* Model */,
 				CD13A8BA256D65EE00D6EC61 /* ChargeyPack */,
 				CD13A872256D2D6700D6EC61 /* ChargeyApp.swift */,
 				CD13A874256D2D6700D6EC61 /* ContentView.swift */,
 				CD13A876256D2D6800D6EC61 /* Assets.xcassets */,
+				CD13A9F4256E3FA400D6EC61 /* Animations.xcassets */,
 				CD13A87B256D2D6800D6EC61 /* Info.plist */,
 				CD13A878256D2D6800D6EC61 /* Preview Content */,
 			);
@@ -262,6 +272,14 @@
 			isa = PBXGroup;
 			children = (
 				CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CD13A9C8256DEE7D00D6EC61 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CD13A9C9256DEE9E00D6EC61 /* LottieView.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -395,7 +413,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD13A87A256D2D6800D6EC61 /* Preview Assets.xcassets in Resources */,
+				CD13A9FC256E3FAE00D6EC61 /* 36318-cat-preloader.json in Resources */,
 				CD13A877256D2D6800D6EC61 /* Assets.xcassets in Resources */,
+				CD13A9F5256E3FA400D6EC61 /* Animations.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +437,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD13A9FD256E3FAE00D6EC61 /* 36318-cat-preloader.json in Resources */,
+				CD13A9F6256E3FA400D6EC61 /* Animations.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +498,7 @@
 			files = (
 				CD13A924256D7F4800D6EC61 /* Intents.intentdefinition in Sources */,
 				CD13A8C1256D690000D6EC61 /* ChargeyPackList.swift in Sources */,
-				CD13A933256D807A00D6EC61 /* AnimationIntentHandler.swift in Sources */,
+				CD13A9CA256DEE9E00D6EC61 /* LottieView.swift in Sources */,
 				CD13A957256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */,
 				CD13A8BC256D65FE00D6EC61 /* ChargeyPack.swift in Sources */,
 				CD13A8AE256D63D500D6EC61 /* Store.swift in Sources */,

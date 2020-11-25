@@ -14,7 +14,9 @@ struct ChargeyApp: App {
             ContentView()
 				.onContinueUserActivity(NSUserActivity.ChargingAnimationType) { activity in
 					print ("Charging Animation Activity: \(activity)")
-					
+				}
+				.onContinueUserActivity(NSUserActivity.DisconnectedAnimationType) { activity in
+					print ("Disconnected Animation Activity: \(activity)")
 				}
         }
     }

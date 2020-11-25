@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State var play = false
+	
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+		VStack {
+			LottieView(name: "36318-cat-preloader", play: $play)
+				.frame(width: 300, height: 300)
+			Button("Play") { self.play.toggle() }
+		}
+		.
+		.background(Color.black)
     }
 }
 

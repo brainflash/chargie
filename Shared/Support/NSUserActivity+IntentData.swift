@@ -10,4 +10,5 @@ import Foundation
 extension NSUserActivity {
 	
 	public static let ChargingAnimationType = "app.chargey.charginganimation"
+	public static let DisconnectedAnimationType = "app.chargey.disconnectedanimation"
 }

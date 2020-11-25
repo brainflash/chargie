@@ -23,3 +23,14 @@ class AnimationIntentHandler: NSObject, ChargingAnimationIntentHandling {
 	
 	
 }
+
+class DisconnectedIntentHandler: NSObject, DisconnectedAnimationIntentHandling {
+	
+	func handle(intent: DisconnectedAnimationIntent, completion: @escaping (DisconnectedAnimationIntentResponse) -> Void) {
+		let userActivity = NSUserActivity(activityType: NSUserActivity.DisconnectedAnimationType)
+		userActivity.addUserInfoEntries(from: [NSUserActivity.DisconnectedAnimationType: "1"])
+		
+		let response = DisconnectedAnimationIntentResponse(code: .continueInApp, userActivity: userActivity)
+		completion(response)
+	}
+}
