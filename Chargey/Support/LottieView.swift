@@ -33,8 +33,6 @@ struct LottieView: UIViewRepresentable {
 	
 	func initAnimation() {
 		animationView.animation = Animation.named(name)
-		// TODO: arrange these into groups
-//		animationView.animation = Animation.named(name, bundle: Bundle.main, subdirectory: "/Resources/Animations/")
 		animationView.contentMode = .scaleAspectFit
 		animationView.loopMode = .loop
 	}
@@ -64,48 +62,6 @@ struct LottieView: UIViewRepresentable {
 		animationView.loopMode = .loop
 		animationView.play()
 	}
-	
-/*
-	func makeUIView(context: Context) -> some UIView {
-		let view = UIView()
-
-		initAnimation()
-//		animationView.play()
-		
-		animationView.translatesAutoresizingMaskIntoConstraints = false
-		view.addSubview(animationView)
-		
-		NSLayoutConstraint.activate([
-			animationView.widthAnchor.constraint(equalTo: view.widthAnchor),
-			animationView.heightAnchor.constraint(equalTo: view.heightAnchor)
-		])
-		
-		return view
-	}
-	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
-		// TODO: does the 'play' var above do anything? Needs testing...
-
-//		initAnimation()
-		if self.play {
-			if animationView.animation == nil {
-				animationView.animation = Animation.named(name)
-			}
-//			if self.playState == false {
-				print ("LottieView play")
-				animationView.play()
-//				self.playState = true
-//			}
-//			self.playAnimation()
-		} else {
-			print ("LottieView stop")
-//			self.playState = false
-//			animationView.stop()
-//			self.stop()
-		}
-	}
-*/
-
 }
 
 extension LottieView {

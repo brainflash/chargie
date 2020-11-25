@@ -15,7 +15,9 @@ struct ChargieView: View {
 
 //	let animation = "9678-colorfull-loading"
 	let animation = "36318-cat-preloader"
-	
+	// TODO: arrange animation files into resource subfolders:
+	// 			Resources/Animations/
+
     var body: some View {
 		ZStack {
 			NavigationLink(destination: MenuView(), isActive: $isShowingMainView) { EmptyView() }
@@ -48,10 +50,6 @@ struct ChargieView: View {
 				self.play = true
 				isShowingMainView = false
 			}
-//			let chargieMode = (appMode != .normal)
-//			self.play = chargieMode
-//			isShowingMainView = !chargieMode
-//			print ("isShowingMainView: \(isShowingMainView)")
 		}
     }
 }

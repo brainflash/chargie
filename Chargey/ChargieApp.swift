@@ -17,25 +17,18 @@ struct ChargieApp: App {
 				.environmentObject(model)
 				.onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
 					print(">>> Moved to the foreground!")
-//					model.appMode = .normal
 				}
 				.onReceive(NotificationCenter.default.publisher(for: UIApplication.didEnterBackgroundNotification)) { _ in
 					print("<<< App moved to background Zzz")
 					model.appMode = .normal
 				}
 				.onContinueUserActivity(NSUserActivity.ChargingAnimationType) { activity in
-//					Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
-//					DispatchQueue.main.schedule(after: .init(.now() + 0.5)) {
-						print ("Charging Animation Activity: \(activity)\n")
-						model.appMode = .charging
-//					}
+					print ("Charging Animation Activity: \(activity)\n")
+					model.appMode = .charging
 				}
 				.onContinueUserActivity(NSUserActivity.DisconnectedAnimationType) { activity in
-//					Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
-//					DispatchQueue.main.schedule(after: .init(.now() + 0.5)) {
-						print ("Disconnected Animation Activity: \(activity)\n")
-						model.appMode = .disconnected
-//					}
+					print ("Disconnected Animation Activity: \(activity)\n")
+					model.appMode = .disconnected
 				}
         }
     }

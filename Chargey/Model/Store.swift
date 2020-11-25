@@ -18,6 +18,7 @@ class Store: NSObject, ObservableObject {
 	private var model: AppModel?
 	
 	private let allProductIdentifiers = Set([
+		Store.ProductIdentifier.AllPacks,
 		Store.ProductIdentifier.ChargiePack1,
 		Store.ProductIdentifier.ChargiePack2,
 		Store.ProductIdentifier.ChargiePack3,
@@ -51,7 +52,7 @@ class Store: NSObject, ObservableObject {
 
 extension Store {
 	struct ProductIdentifier {
-		static let AllPacks = "app.chargie.allsets"
+		static let AllPacks 	= "app.chargie.allpacks"
 		static let ChargiePack1	= "app.chargie.pack1"
 		static let ChargiePack2	= "app.chargie.pack2"
 		static let ChargiePack3	= "app.chargie.pack3"
