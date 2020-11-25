@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-	@State var play = false
+	@EnvironmentObject private var model: AppModel
 	
+	let animation = "36318-cat-preloader"
+
     var body: some View {
-		VStack {
-			LottieView(name: "36318-cat-preloader", play: $play)
-				.frame(width: 300, height: 300)
-			Button("Play") { self.play.toggle() }
+		NavigationView {
+			
+			ChargieView(name: animation)
+			
 		}
-		.background(Color.black)
+		.onReceive(model.$appMode) { appMode in
+			// Animate navigation in normal mode
+			let normalMode = (appMode == .normal)
+			UINavigationBar.setAnimationsEnabled(normalMode)
+//			UINavigationController.setNavigationBarHidden(<#T##self: UINavigationController##UINavigationController#>)
+		}
+		.navigationBarHidden(true)
     }
 }
 

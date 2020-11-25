@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		631EBCB0B44ED54E694B5CDC /* libPods-Chargey.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53A8B008F4857BAB526BB8 /* libPods-Chargey.a */; };
-		8B74210F6A1C2E9EBCB1010D /* libPods-ChargeyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E60579A13DF0A4D538EDAAD2 /* libPods-ChargeyTests.a */; };
+		0E9614BF998E940AE96C6190 /* libPods-ChargieTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 030E6CBBE9BED812CF46CEE1 /* libPods-ChargieTests.a */; };
+		70CD85F1EB43E7EAF585D761 /* libPods-Chargie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 129180318E1D886AB8A124CF /* libPods-Chargie.a */; };
 		CD13A873256D2D6700D6EC61 /* ChargieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A872256D2D6700D6EC61 /* ChargieApp.swift */; };
 		CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A874256D2D6700D6EC61 /* ContentView.swift */; };
 		CD13A877256D2D6800D6EC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13A876256D2D6800D6EC61 /* Assets.xcassets */; };
@@ -28,9 +28,12 @@
 		CD13A958256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */; };
 		CD13A9CA256DEE9E00D6EC61 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A9C9256DEE9E00D6EC61 /* LottieView.swift */; };
 		CD13A9F5256E3FA400D6EC61 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13A9F4256E3FA400D6EC61 /* Animations.xcassets */; };
-		CD13A9F6256E3FA400D6EC61 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD13A9F4256E3FA400D6EC61 /* Animations.xcassets */; };
 		CD13A9FC256E3FAE00D6EC61 /* 36318-cat-preloader.json in Resources */ = {isa = PBXBuildFile; fileRef = CD13A9FB256E3FAE00D6EC61 /* 36318-cat-preloader.json */; };
 		CD13A9FD256E3FAE00D6EC61 /* 36318-cat-preloader.json in Resources */ = {isa = PBXBuildFile; fileRef = CD13A9FB256E3FAE00D6EC61 /* 36318-cat-preloader.json */; };
+		CD49F250256E78F200C9B274 /* 9678-colorfull-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F24F256E78F200C9B274 /* 9678-colorfull-loading.json */; };
+		CD49F25A256E7B6900C9B274 /* ChargieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F259256E7B6900C9B274 /* ChargieView.swift */; };
+		CD49F26C256E8CE600C9B274 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F26B256E8CE600C9B274 /* MenuView.swift */; };
+		CD49F281256EA4C900C9B274 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CD49F280256EA4C900C9B274 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +75,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		030E6CBBE9BED812CF46CEE1 /* libPods-ChargieTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChargieTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		129180318E1D886AB8A124CF /* libPods-Chargie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Chargie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E2FB6B7CACF7C554D3CCF4 /* Pods-Chargie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargie.release.xcconfig"; path = "Target Support Files/Pods-Chargie/Pods-Chargie.release.xcconfig"; sourceTree = "<group>"; };
 		23574B1F830B45EB66F5AE8F /* Pods-ChargeyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeyTests.debug.xcconfig"; path = "Target Support Files/Pods-ChargeyTests/Pods-ChargeyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4180792B937A64D74F02BDEC /* Pods-ChargieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargieTests.debug.xcconfig"; path = "Target Support Files/Pods-ChargieTests/Pods-ChargieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		45F1182A1503435C77F28448 /* Pods-ChargieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargieTests.release.xcconfig"; path = "Target Support Files/Pods-ChargieTests/Pods-ChargieTests.release.xcconfig"; sourceTree = "<group>"; };
 		4709E1501BA34A36710731EB /* Pods-Chargey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargey.debug.xcconfig"; path = "Target Support Files/Pods-Chargey/Pods-Chargey.debug.xcconfig"; sourceTree = "<group>"; };
 		4EEF883F819465BB441B1C97 /* Pods-ChargeyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeyTests.release.xcconfig"; path = "Target Support Files/Pods-ChargeyTests/Pods-ChargeyTests.release.xcconfig"; sourceTree = "<group>"; };
-		7D53A8B008F4857BAB526BB8 /* libPods-Chargey.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Chargey.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA8C706805C31C630DE3C1B /* Pods-Chargie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargie.debug.xcconfig"; path = "Target Support Files/Pods-Chargie/Pods-Chargie.debug.xcconfig"; sourceTree = "<group>"; };
 		CD13A86F256D2D6700D6EC61 /* Chargie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chargie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD13A872256D2D6700D6EC61 /* ChargieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargieApp.swift; sourceTree = "<group>"; };
 		CD13A874256D2D6700D6EC61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,8 +111,10 @@
 		CD13A9C9256DEE9E00D6EC61 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		CD13A9F4256E3FA400D6EC61 /* Animations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animations.xcassets; sourceTree = "<group>"; };
 		CD13A9FB256E3FAE00D6EC61 /* 36318-cat-preloader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "36318-cat-preloader.json"; sourceTree = "<group>"; };
+		CD49F24F256E78F200C9B274 /* 9678-colorfull-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9678-colorfull-loading.json"; sourceTree = "<group>"; };
+		CD49F259256E7B6900C9B274 /* ChargieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargieView.swift; sourceTree = "<group>"; };
+		CD49F26B256E8CE600C9B274 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargey.release.xcconfig"; path = "Target Support Files/Pods-Chargey/Pods-Chargey.release.xcconfig"; sourceTree = "<group>"; };
-		E60579A13DF0A4D538EDAAD2 /* libPods-ChargeyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChargeyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +122,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				631EBCB0B44ED54E694B5CDC /* libPods-Chargey.a in Frameworks */,
+				70CD85F1EB43E7EAF585D761 /* libPods-Chargie.a in Frameworks */,
+				CD49F281256EA4C900C9B274 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B74210F6A1C2E9EBCB1010D /* libPods-ChargeyTests.a in Frameworks */,
+				0E9614BF998E940AE96C6190 /* libPods-ChargieTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +159,10 @@
 				CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */,
 				23574B1F830B45EB66F5AE8F /* Pods-ChargeyTests.debug.xcconfig */,
 				4EEF883F819465BB441B1C97 /* Pods-ChargeyTests.release.xcconfig */,
+				ACA8C706805C31C630DE3C1B /* Pods-Chargie.debug.xcconfig */,
+				18E2FB6B7CACF7C554D3CCF4 /* Pods-Chargie.release.xcconfig */,
+				4180792B937A64D74F02BDEC /* Pods-ChargieTests.debug.xcconfig */,
+				45F1182A1503435C77F28448 /* Pods-ChargieTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,8 +170,8 @@
 		572BC763C47AF2F856F8C820 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D53A8B008F4857BAB526BB8 /* libPods-Chargey.a */,
-				E60579A13DF0A4D538EDAAD2 /* libPods-ChargeyTests.a */,
+				129180318E1D886AB8A124CF /* libPods-Chargie.a */,
+				030E6CBBE9BED812CF46CEE1 /* libPods-ChargieTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,12 +206,15 @@
 			isa = PBXGroup;
 			children = (
 				CD13A9FB256E3FAE00D6EC61 /* 36318-cat-preloader.json */,
-				CD13A9C8256DEE7D00D6EC61 /* Support */,
+				CD49F24F256E78F200C9B274 /* 9678-colorfull-loading.json */,
 				CD13A8D1256D770200D6EC61 /* Chargey.entitlements */,
 				CD13A8AC256D63BF00D6EC61 /* Model */,
 				CD13A8BA256D65EE00D6EC61 /* ChargiePack */,
-				CD13A872256D2D6700D6EC61 /* ChargieApp.swift */,
+				CD13A9C8256DEE7D00D6EC61 /* Support */,
+				CD49F259256E7B6900C9B274 /* ChargieView.swift */,
 				CD13A874256D2D6700D6EC61 /* ContentView.swift */,
+				CD49F26B256E8CE600C9B274 /* MenuView.swift */,
+				CD13A872256D2D6700D6EC61 /* ChargieApp.swift */,
 				CD13A876256D2D6800D6EC61 /* Assets.xcassets */,
 				CD13A9F4256E3FA400D6EC61 /* Animations.xcassets */,
 				CD13A87B256D2D6800D6EC61 /* Info.plist */,
@@ -303,6 +321,9 @@
 				CD13A8E2256D78E000D6EC61 /* PBXTargetDependency */,
 			);
 			name = Chargie;
+			packageProductDependencies = (
+				CD49F280256EA4C900C9B274 /* Lottie */,
+			);
 			productName = Chargey;
 			productReference = CD13A86F256D2D6700D6EC61 /* Chargie.app */;
 			productType = "com.apple.product-type.application";
@@ -395,6 +416,9 @@
 				Base,
 			);
 			mainGroup = CD13A866256D2D6700D6EC61;
+			packageReferences = (
+				CD49F27F256EA4C900C9B274 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = CD13A870256D2D6700D6EC61 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -413,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD13A87A256D2D6800D6EC61 /* Preview Assets.xcassets in Resources */,
+				CD49F250256E78F200C9B274 /* 9678-colorfull-loading.json in Resources */,
 				CD13A9FC256E3FAE00D6EC61 /* 36318-cat-preloader.json in Resources */,
 				CD13A877256D2D6800D6EC61 /* Assets.xcassets in Resources */,
 				CD13A9F5256E3FA400D6EC61 /* Animations.xcassets in Resources */,
@@ -438,7 +463,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD13A9FD256E3FAE00D6EC61 /* 36318-cat-preloader.json in Resources */,
-				CD13A9F6256E3FA400D6EC61 /* Animations.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +484,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Chargey-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Chargie-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -482,7 +506,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ChargeyTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ChargieTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -496,12 +520,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD49F25A256E7B6900C9B274 /* ChargieView.swift in Sources */,
 				CD13A924256D7F4800D6EC61 /* Intents.intentdefinition in Sources */,
 				CD13A8C1256D690000D6EC61 /* ChargiePackList.swift in Sources */,
 				CD13A9CA256DEE9E00D6EC61 /* LottieView.swift in Sources */,
 				CD13A957256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */,
 				CD13A8BC256D65FE00D6EC61 /* ChargiePack.swift in Sources */,
 				CD13A8AE256D63D500D6EC61 /* Store.swift in Sources */,
+				CD49F26C256E8CE600C9B274 /* MenuView.swift in Sources */,
 				CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */,
 				CD13A873256D2D6700D6EC61 /* ChargieApp.swift in Sources */,
 				CD13A8B3256D648600D6EC61 /* AppModel.swift in Sources */,
@@ -674,7 +700,7 @@
 		};
 		CD13A895256D2D6800D6EC61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4709E1501BA34A36710731EB /* Pods-Chargey.debug.xcconfig */;
+			baseConfigurationReference = ACA8C706805C31C630DE3C1B /* Pods-Chargie.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -695,13 +721,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Chargey Dev";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CD13A896256D2D6800D6EC61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */;
+			baseConfigurationReference = 18E2FB6B7CACF7C554D3CCF4 /* Pods-Chargie.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -722,13 +748,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Chargey Dev";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		CD13A898256D2D6800D6EC61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23574B1F830B45EB66F5AE8F /* Pods-ChargeyTests.debug.xcconfig */;
+			baseConfigurationReference = 4180792B937A64D74F02BDEC /* Pods-ChargieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -751,7 +777,7 @@
 		};
 		CD13A899256D2D6800D6EC61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EEF883F819465BB441B1C97 /* Pods-ChargeyTests.release.xcconfig */;
+			baseConfigurationReference = 45F1182A1503435C77F28448 /* Pods-ChargieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -905,6 +931,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD49F27F256EA4C900C9B274 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD49F280256EA4C900C9B274 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD49F27F256EA4C900C9B274 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CD13A867256D2D6700D6EC61 /* Project object */;
 }
