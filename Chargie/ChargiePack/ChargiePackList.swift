@@ -19,23 +19,28 @@ extension ChargiePack {
 	]
 	
 	static let chargiePack1 = ChargiePack(
-		id: "app.chargie.pack1"
+		id: "app.chargie.pack1",
+		chargies: [ .racing, .amongus ]
 	)
 	
 	static let chargiePack2 = ChargiePack(
-		id: "app.chargie.pack2"
+		id: "app.chargie.pack2",
+		chargies: []
 	)
 
 	static let chargiePack3 = ChargiePack(
-		id: "app.chargie.pack3"
+		id: "app.chargie.pack3",
+		chargies: []
 	)
 
 	static let chargiePack4 = ChargiePack(
-		id: "app.chargie.pack4"
+		id: "app.chargie.pack4",
+		chargies: []
 	)
 
 	static let chargiePack5 = ChargiePack(
-		id: "app.chargie.pack5"
+		id: "app.chargie.pack5",
+		chargies: []
 	)
 
 }

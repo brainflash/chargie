@@ -15,6 +15,8 @@ struct LottieView: UIViewRepresentable {
 	}
 	
 	@State var playState: Bool = false
+	/// The Chargie (object containing view & theme settings)
+	@ObservedObject var chargie: Chargie
 	/// The animation name
 	@Binding var name: String
 	/// Animation will play when true
@@ -29,12 +31,6 @@ struct LottieView: UIViewRepresentable {
 			self.parent = animationView
 			super.init()
 		}
-	}
-	
-	func initAnimation() {
-		animationView.animation = Animation.named(name)
-		animationView.contentMode = .scaleAspectFit
-		animationView.loopMode = .loop
 	}
 	
 	func makeUIView(context: Context) -> some UIView {
@@ -57,35 +53,40 @@ struct LottieView: UIViewRepresentable {
 			animationView.heightAnchor.constraint(equalTo: uiView.heightAnchor)
 		])
 
-		animationView.animation = Animation.named(name)
+		// TODO: arrange animation files into resource subfolders:
+		// 			Resources/Animations/
+		animationView.animation = Animation.named(chargie.name)
 		animationView.contentMode = .scaleAspectFit
 		animationView.loopMode = .loop
 		animationView.play()
+		animationView.animationSpeed = chargie.speed
 	}
 }
 
-extension LottieView {
-	
-	func playAnimation() {
+//extension LottieView {
+//
+//	func playAnimation() {
 //		guard self.playState == false else { return }
 //		animationView.play()
 //		self.playState = true
-	}
-	
-	func stop() {
+//	}
+//
+//	func stop() {
 //		guard self.playState == true else { return }
 //		animationView.stop()
 //		self.playState = false
-	}
-
-}
+//	}
+//
+//}
 
 struct LottieView_Previews: PreviewProvider {
-	static var name = Binding<String>.constant("36318-cat-preloader")
+	//	"39701-robot-bot-3d"
+	static var chargie: Chargie = .racing
+	static var name = Binding<String>.constant("33534-merry-christmas")
 	static var play = Binding<Bool>.constant(true)
 	
     static var previews: some View {
-		LottieView(name: name, play: play)
+		LottieView(chargie: chargie, name: name, play: play)
 //			.frame(width: 300, height: 300)
     }
 

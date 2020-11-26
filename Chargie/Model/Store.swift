@@ -18,12 +18,17 @@ class Store: NSObject, ObservableObject {
 	private var model: AppModel?
 	
 	private let allProductIdentifiers = Set([
+		// TODO: Handle AllPacks purchase
 		Store.ProductIdentifier.AllPacks,
 		Store.ProductIdentifier.ChargiePack1,
 		Store.ProductIdentifier.ChargiePack2,
 		Store.ProductIdentifier.ChargiePack3,
 		Store.ProductIdentifier.ChargiePack4,
-		Store.ProductIdentifier.ChargiePack5
+		Store.ProductIdentifier.ChargiePack5,
+		// TODO: IAPs
+//		Store.ProductIdentifier.SmallTip,
+//		Store.ProductIdentifier.MediumTip,
+//		Store.ProductIdentifier.LargeTip
 	])
 	
 	private var completedPurchases = [String]()
