@@ -10,10 +10,23 @@ import SwiftUI
 struct MenuView: View {
 	@EnvironmentObject private var model: AppModel
 	
+	init() {
+//		UITableView.appearance().separatorStyle = .none
+		UITableViewCell.appearance().backgroundColor = .black
+		UITableView.appearance().backgroundColor = .black
+	}
+	
     var body: some View {
 		ZStack {
 			Color.black
 				.edgesIgnoringSafeArea(.all)
+			
+			List {
+				ForEach(model.chargiePacks) { pack in
+					PackRow(pack: pack)
+				}
+			}
+			.listRowBackground(Color.black)
 			
 			Text("Menu View")
 				.foregroundColor(.red)

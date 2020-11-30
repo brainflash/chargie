@@ -1,5 +1,5 @@
 //
-//  ChargiePackList.swift
+//  ChargiePack+List.swift
 //  Chargie
 //
 //  Created by Brainflash on 24/11/2020.
@@ -18,29 +18,46 @@ extension ChargiePack {
 		.chargiePack5
 	]
 	
-	static let chargiePack1 = ChargiePack(
-		id: "app.chargie.pack1",
-		chargies: [ .racing, .amongus ]
+	// Free
+	static let chargiePack0 = ChargiePack(
+		id: "app.chargie.pack0",
+		name: "Free",
+		chargies: [.progress, .progressColor]
 	)
 	
+	// Futuristic & Games
+	static let chargiePack1 = ChargiePack(
+		id: "app.chargie.pack1",
+		name: "Futuristic",
+		chargies: [.racing, .superhero, .amongus]
+	)
+	
+	// Christmas
 	static let chargiePack2 = ChargiePack(
 		id: "app.chargie.pack2",
-		chargies: []
+		name: "Christmas",
+		chargies: [.xmasbird]
 	)
 
+	// Fashion
 	static let chargiePack3 = ChargiePack(
 		id: "app.chargie.pack3",
-		chargies: []
+		name: "Fashion",
+		chargies: [.reddress]
 	)
 
+	// Animals
 	static let chargiePack4 = ChargiePack(
 		id: "app.chargie.pack4",
-		chargies: []
+		name: "Animals",
+		chargies: [.animals]
 	)
 
+	// Charging
 	static let chargiePack5 = ChargiePack(
 		id: "app.chargie.pack5",
-		chargies: []
+		name: "Charging",
+		chargies: [.progress, .progressColor]
 	)
 
 }

@@ -13,9 +13,11 @@ class ChargiePack: ObservableObject, Identifiable {
 	var chargies: [Chargie]
 	
 	var id: String
+	var name: String
 	
-	init(id: String, chargies: [Chargie]) {
+	init(id: String, name: String, chargies: [Chargie]) {
 		self.id = id
+		self.name = name
 		self.chargies = chargies
 	}
 }
@@ -31,6 +33,7 @@ extension ChargiePack {
 	func unlock() {
 		isLocked = false
 	}
+
 }
 
 

@@ -22,7 +22,6 @@ struct ContentView: View {
 			// Animate navigation in normal mode
 			let normalMode = (appMode == .normal)
 			UINavigationBar.setAnimationsEnabled(normalMode)
-//			UINavigationController.setNavigationBarHidden(<#T##self: UINavigationController##UINavigationController#>)
 		}
 		.navigationBarHidden(true)
     }

@@ -53,15 +53,11 @@ struct TestView: View {
 //					.frame(width: 300, height: 300)
 
 				HStack {
-					Text("Name: \(name)")
-						.foregroundColor(.white)
-						.font(.headline)
-						.bold()
-					
 					Text("Index: \(index)")
-						.foregroundColor(.white)
 						.font(.headline)
 						.bold()
+						.foregroundColor(.white)
+						.padding()
 					
 					ColorPicker(selection: $model.charging.background, supportsOpacity: false, label: {
 						Label {
@@ -71,20 +67,34 @@ struct TestView: View {
 					})
 					.padding()
 				}
+				
+				HStack {
+					Text("\(name)")
+						.font(.headline)
+						.bold()
+						.foregroundColor(.white)
+						.background(Color.black)
+						.padding()
+				}
 
 				HStack {
 					Button(action: { prev() }) {
 						Text("Prev")
+							.foregroundColor(.white)
+							.background(Color.black)
+							.padding()
 					}
 					.padding()
 
 					Button(action: { next() }) {
 						Text("Next")
-					}
+							.foregroundColor(.white)
+							.background(Color.black)
+							.padding()
+				}
 					.padding()
 				}
 			}
-//			.background(Color.red)
 		}
 		.navigationBarHidden(true)
 	}

@@ -54,8 +54,10 @@ struct LottieView: UIViewRepresentable {
 		])
 
 		// TODO: arrange animation files into resource subfolders:
-		// 			Resources/Animations/
-		animationView.animation = Animation.named(chargie.name)
+		// 			Chargies/Animations/
+
+		let path = Bundle.main.bundlePath.appending("/Chargies/Animations/\(chargie.id).json")
+		animationView.animation = Animation.filepath(path)
 		animationView.contentMode = .scaleAspectFit
 		animationView.loopMode = .loop
 		animationView.play()

@@ -91,8 +91,8 @@ extension Store {
 			   transaction.transactionState == .purchased {
 
 				if let model = self.model {
-					if let chargiePack = model.chargiePacks.first(where: { $0.id == transaction.payment.productIdentifier }) {
-						chargiePack.unlock()
+					if let pack = model.chargiePacks.first(where: { $0.id == transaction.payment.productIdentifier }) {
+						pack.unlock()
 					}
 				}
 			}

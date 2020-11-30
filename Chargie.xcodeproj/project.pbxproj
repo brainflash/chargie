@@ -18,37 +18,26 @@
 		CD13A8AE256D63D500D6EC61 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8AD256D63D500D6EC61 /* Store.swift */; };
 		CD13A8B3256D648600D6EC61 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8B2256D648600D6EC61 /* AppModel.swift */; };
 		CD13A8BC256D65FE00D6EC61 /* ChargiePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8BB256D65FE00D6EC61 /* ChargiePack.swift */; };
-		CD13A8C1256D690000D6EC61 /* ChargiePackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8C0256D690000D6EC61 /* ChargiePackList.swift */; };
+		CD13A8C1256D690000D6EC61 /* ChargiePack+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8C0256D690000D6EC61 /* ChargiePack+List.swift */; };
 		CD13A8DF256D78E000D6EC61 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A8DE256D78E000D6EC61 /* IntentHandler.swift */; };
 		CD13A8E3256D78E000D6EC61 /* ChargingAnimation.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD13A8DC256D78E000D6EC61 /* ChargingAnimation.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		CD13A924256D7F4800D6EC61 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */; };
 		CD13A925256D7F4800D6EC61 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */; };
 		CD13A934256D807A00D6EC61 /* AnimationIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A932256D807A00D6EC61 /* AnimationIntentHandler.swift */; };
 		CD13A957256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */; };
 		CD13A958256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */; };
 		CD13A9CA256DEE9E00D6EC61 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A9C9256DEE9E00D6EC61 /* LottieView.swift */; };
+		CD3E3CD2256FD85600E45209 /* Chargies in Resources */ = {isa = PBXBuildFile; fileRef = CD3E3CD1256FD85600E45209 /* Chargies */; };
 		CD49F25A256E7B6900C9B274 /* ChargieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F259256E7B6900C9B274 /* ChargieView.swift */; };
 		CD49F26C256E8CE600C9B274 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F26B256E8CE600C9B274 /* MenuView.swift */; };
 		CD49F281256EA4C900C9B274 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CD49F280256EA4C900C9B274 /* Lottie */; };
 		CD49F2DE256EE55500C9B274 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F2DD256EE55500C9B274 /* TestView.swift */; };
-		CD49F2FC256EF2CC00C9B274 /* 6146-racing.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2EB256EF2CB00C9B274 /* 6146-racing.json */; };
-		CD49F2FF256EF2CC00C9B274 /* 33534-merry-christmas.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2EE256EF2CB00C9B274 /* 33534-merry-christmas.json */; };
-		CD49F300256EF2CC00C9B274 /* 39715-build-a-snowman.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2EF256EF2CB00C9B274 /* 39715-build-a-snowman.json */; };
-		CD49F301256EF2CC00C9B274 /* 38699-appointment-notify.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2F0256EF2CB00C9B274 /* 38699-appointment-notify.json */; };
-		CD49F302256EF2CC00C9B274 /* 37725-loading-50-among-us.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2F1256EF2CB00C9B274 /* 37725-loading-50-among-us.json */; };
-		CD49F303256EF2CC00C9B274 /* 30317-sunshine-rainbow-white-horse.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2F2256EF2CB00C9B274 /* 30317-sunshine-rainbow-white-horse.json */; };
-		CD49F304256EF2CC00C9B274 /* 16307-progress.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2F3256EF2CB00C9B274 /* 16307-progress.json */; };
-		CD49F305256EF2CC00C9B274 /* 8144-battery-low-humour-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2F4256EF2CB00C9B274 /* 8144-battery-low-humour-animation.json */; };
-		CD49F306256EF2CC00C9B274 /* 38910-cat-escape.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2F5256EF2CB00C9B274 /* 38910-cat-escape.json */; };
-		CD49F307256EF2CC00C9B274 /* 39500-santa-claus.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2F6256EF2CB00C9B274 /* 39500-santa-claus.json */; };
-		CD49F308256EF2CC00C9B274 /* 39388-wolf-and-moon.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2F7256EF2CB00C9B274 /* 39388-wolf-and-moon.json */; };
-		CD49F309256EF2CC00C9B274 /* 8175-catcoffee.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2F8256EF2CB00C9B274 /* 8175-catcoffee.json */; };
-		CD49F30A256EF2CC00C9B274 /* 6728-cat.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2F9256EF2CB00C9B274 /* 6728-cat.json */; };
-		CD49F30B256EF2CC00C9B274 /* 15392-charging-battery.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2FA256EF2CC00C9B274 /* 15392-charging-battery.json */; };
-		CD49F30C256EF2CC00C9B274 /* 30874-battery-charging.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49F2FB256EF2CC00C9B274 /* 30874-battery-charging.json */; };
 		CD49F312256F072900C9B274 /* Chargie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F311256F072900C9B274 /* Chargie.swift */; };
 		CD49F318256F07BB00C9B274 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F317256F07BB00C9B274 /* Color+Extension.swift */; };
 		CD49F326256F082100C9B274 /* Chargie+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F325256F082100C9B274 /* Chargie+List.swift */; };
+		CD49F33F256F36EA00C9B274 /* PackRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F33E256F36EA00C9B274 /* PackRow.swift */; };
+		CD49F345256F3ECA00C9B274 /* ChargiePack+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F344256F3ECA00C9B274 /* ChargiePack+SwiftUI.swift */; };
+		CD55C495256FC1B100320224 /* Chargie+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55C494256FC1B100320224 /* Chargie+SwiftUI.swift */; };
+		CDCC2AB4256FDEB2008F6002 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +103,7 @@
 		CD13A8AD256D63D500D6EC61 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CD13A8B2256D648600D6EC61 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		CD13A8BB256D65FE00D6EC61 /* ChargiePack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargiePack.swift; sourceTree = "<group>"; };
-		CD13A8C0256D690000D6EC61 /* ChargiePackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargiePackList.swift; sourceTree = "<group>"; };
+		CD13A8C0256D690000D6EC61 /* ChargiePack+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChargiePack+List.swift"; sourceTree = "<group>"; };
 		CD13A8DC256D78E000D6EC61 /* ChargingAnimation.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChargingAnimation.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD13A8DE256D78E000D6EC61 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		CD13A8E0256D78E000D6EC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,28 +112,17 @@
 		CD13A932256D807A00D6EC61 /* AnimationIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationIntentHandler.swift; sourceTree = "<group>"; };
 		CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+IntentData.swift"; sourceTree = "<group>"; };
 		CD13A9C9256DEE9E00D6EC61 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		CD3E3CD1256FD85600E45209 /* Chargies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chargies; sourceTree = "<group>"; };
 		CD49F259256E7B6900C9B274 /* ChargieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargieView.swift; sourceTree = "<group>"; };
 		CD49F26B256E8CE600C9B274 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CD49F2B2256ECC6200C9B274 /* Chargie.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Chargie.entitlements; sourceTree = "<group>"; };
 		CD49F2DD256EE55500C9B274 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		CD49F2EB256EF2CB00C9B274 /* 6146-racing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "6146-racing.json"; sourceTree = "<group>"; };
-		CD49F2EE256EF2CB00C9B274 /* 33534-merry-christmas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "33534-merry-christmas.json"; sourceTree = "<group>"; };
-		CD49F2EF256EF2CB00C9B274 /* 39715-build-a-snowman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "39715-build-a-snowman.json"; sourceTree = "<group>"; };
-		CD49F2F0256EF2CB00C9B274 /* 38699-appointment-notify.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "38699-appointment-notify.json"; sourceTree = "<group>"; };
-		CD49F2F1256EF2CB00C9B274 /* 37725-loading-50-among-us.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "37725-loading-50-among-us.json"; path = "../../../../Projects/Chargie/Animations/37725-loading-50-among-us.json"; sourceTree = "<group>"; };
-		CD49F2F2256EF2CB00C9B274 /* 30317-sunshine-rainbow-white-horse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "30317-sunshine-rainbow-white-horse.json"; sourceTree = "<group>"; };
-		CD49F2F3256EF2CB00C9B274 /* 16307-progress.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "16307-progress.json"; sourceTree = "<group>"; };
-		CD49F2F4256EF2CB00C9B274 /* 8144-battery-low-humour-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "8144-battery-low-humour-animation.json"; sourceTree = "<group>"; };
-		CD49F2F5256EF2CB00C9B274 /* 38910-cat-escape.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "38910-cat-escape.json"; sourceTree = "<group>"; };
-		CD49F2F6256EF2CB00C9B274 /* 39500-santa-claus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "39500-santa-claus.json"; sourceTree = "<group>"; };
-		CD49F2F7256EF2CB00C9B274 /* 39388-wolf-and-moon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "39388-wolf-and-moon.json"; sourceTree = "<group>"; };
-		CD49F2F8256EF2CB00C9B274 /* 8175-catcoffee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "8175-catcoffee.json"; sourceTree = "<group>"; };
-		CD49F2F9256EF2CB00C9B274 /* 6728-cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "6728-cat.json"; sourceTree = "<group>"; };
-		CD49F2FA256EF2CC00C9B274 /* 15392-charging-battery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "15392-charging-battery.json"; sourceTree = "<group>"; };
-		CD49F2FB256EF2CC00C9B274 /* 30874-battery-charging.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "30874-battery-charging.json"; sourceTree = "<group>"; };
 		CD49F311256F072900C9B274 /* Chargie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chargie.swift; sourceTree = "<group>"; };
 		CD49F317256F07BB00C9B274 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		CD49F325256F082100C9B274 /* Chargie+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chargie+List.swift"; sourceTree = "<group>"; };
+		CD49F33E256F36EA00C9B274 /* PackRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackRow.swift; sourceTree = "<group>"; };
+		CD49F344256F3ECA00C9B274 /* ChargiePack+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChargiePack+SwiftUI.swift"; sourceTree = "<group>"; };
+		CD55C494256FC1B100320224 /* Chargie+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chargie+SwiftUI.swift"; sourceTree = "<group>"; };
 		CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargey.release.xcconfig"; path = "Target Support Files/Pods-Chargey/Pods-Chargey.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,27 +214,14 @@
 		CD13A871256D2D6700D6EC61 /* Chargie */ = {
 			isa = PBXGroup;
 			children = (
-				CD49F2EB256EF2CB00C9B274 /* 6146-racing.json */,
-				CD49F2F9256EF2CB00C9B274 /* 6728-cat.json */,
-				CD49F2F4256EF2CB00C9B274 /* 8144-battery-low-humour-animation.json */,
-				CD49F2F8256EF2CB00C9B274 /* 8175-catcoffee.json */,
-				CD49F2FA256EF2CC00C9B274 /* 15392-charging-battery.json */,
-				CD49F2F3256EF2CB00C9B274 /* 16307-progress.json */,
-				CD49F2F2256EF2CB00C9B274 /* 30317-sunshine-rainbow-white-horse.json */,
-				CD49F2FB256EF2CC00C9B274 /* 30874-battery-charging.json */,
-				CD49F2EE256EF2CB00C9B274 /* 33534-merry-christmas.json */,
-				CD49F2F1256EF2CB00C9B274 /* 37725-loading-50-among-us.json */,
-				CD49F2F0256EF2CB00C9B274 /* 38699-appointment-notify.json */,
-				CD49F2F5256EF2CB00C9B274 /* 38910-cat-escape.json */,
-				CD49F2F7256EF2CB00C9B274 /* 39388-wolf-and-moon.json */,
-				CD49F2F6256EF2CB00C9B274 /* 39500-santa-claus.json */,
-				CD49F2EF256EF2CB00C9B274 /* 39715-build-a-snowman.json */,
+				CD3E3CD1256FD85600E45209 /* Chargies */,
 				CD13A8AC256D63BF00D6EC61 /* Model */,
 				CD13A8BA256D65EE00D6EC61 /* ChargiePack */,
 				CD13A9C8256DEE7D00D6EC61 /* Support */,
 				CD49F259256E7B6900C9B274 /* ChargieView.swift */,
-				CD13A874256D2D6700D6EC61 /* ContentView.swift */,
+				CD49F33E256F36EA00C9B274 /* PackRow.swift */,
 				CD49F26B256E8CE600C9B274 /* MenuView.swift */,
+				CD13A874256D2D6700D6EC61 /* ContentView.swift */,
 				CD13A872256D2D6700D6EC61 /* ChargieApp.swift */,
 				CD49F32B256F1F1500C9B274 /* Test */,
 				CD13A876256D2D6800D6EC61 /* Assets.xcassets */,
@@ -306,9 +271,11 @@
 			isa = PBXGroup;
 			children = (
 				CD49F311256F072900C9B274 /* Chargie.swift */,
+				CD55C494256FC1B100320224 /* Chargie+SwiftUI.swift */,
 				CD49F325256F082100C9B274 /* Chargie+List.swift */,
 				CD13A8BB256D65FE00D6EC61 /* ChargiePack.swift */,
-				CD13A8C0256D690000D6EC61 /* ChargiePackList.swift */,
+				CD49F344256F3ECA00C9B274 /* ChargiePack+SwiftUI.swift */,
+				CD13A8C0256D690000D6EC61 /* ChargiePack+List.swift */,
 			);
 			path = ChargiePack;
 			sourceTree = "<group>";
@@ -491,23 +458,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD49F307256EF2CC00C9B274 /* 39500-santa-claus.json in Resources */,
-				CD49F308256EF2CC00C9B274 /* 39388-wolf-and-moon.json in Resources */,
-				CD49F30B256EF2CC00C9B274 /* 15392-charging-battery.json in Resources */,
-				CD49F2FC256EF2CC00C9B274 /* 6146-racing.json in Resources */,
-				CD49F304256EF2CC00C9B274 /* 16307-progress.json in Resources */,
-				CD49F301256EF2CC00C9B274 /* 38699-appointment-notify.json in Resources */,
-				CD49F305256EF2CC00C9B274 /* 8144-battery-low-humour-animation.json in Resources */,
-				CD49F306256EF2CC00C9B274 /* 38910-cat-escape.json in Resources */,
-				CD49F303256EF2CC00C9B274 /* 30317-sunshine-rainbow-white-horse.json in Resources */,
-				CD49F302256EF2CC00C9B274 /* 37725-loading-50-among-us.json in Resources */,
-				CD49F300256EF2CC00C9B274 /* 39715-build-a-snowman.json in Resources */,
-				CD49F30A256EF2CC00C9B274 /* 6728-cat.json in Resources */,
 				CD13A87A256D2D6800D6EC61 /* Preview Assets.xcassets in Resources */,
-				CD49F309256EF2CC00C9B274 /* 8175-catcoffee.json in Resources */,
-				CD49F30C256EF2CC00C9B274 /* 30874-battery-charging.json in Resources */,
+				CD3E3CD2256FD85600E45209 /* Chargies in Resources */,
 				CD13A877256D2D6800D6EC61 /* Assets.xcassets in Resources */,
-				CD49F2FF256EF2CC00C9B274 /* 33534-merry-christmas.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,10 +540,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD49F2DE256EE55500C9B274 /* TestView.swift in Sources */,
+				CD55C495256FC1B100320224 /* Chargie+SwiftUI.swift in Sources */,
 				CD49F318256F07BB00C9B274 /* Color+Extension.swift in Sources */,
 				CD49F25A256E7B6900C9B274 /* ChargieView.swift in Sources */,
-				CD13A924256D7F4800D6EC61 /* Intents.intentdefinition in Sources */,
-				CD13A8C1256D690000D6EC61 /* ChargiePackList.swift in Sources */,
+				CD13A8C1256D690000D6EC61 /* ChargiePack+List.swift in Sources */,
 				CD49F312256F072900C9B274 /* Chargie.swift in Sources */,
 				CD13A9CA256DEE9E00D6EC61 /* LottieView.swift in Sources */,
 				CD13A957256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */,
@@ -598,9 +551,12 @@
 				CD13A8AE256D63D500D6EC61 /* Store.swift in Sources */,
 				CD49F26C256E8CE600C9B274 /* MenuView.swift in Sources */,
 				CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */,
+				CDCC2AB4256FDEB2008F6002 /* Intents.intentdefinition in Sources */,
 				CD13A873256D2D6700D6EC61 /* ChargieApp.swift in Sources */,
 				CD49F326256F082100C9B274 /* Chargie+List.swift in Sources */,
+				CD49F345256F3ECA00C9B274 /* ChargiePack+SwiftUI.swift in Sources */,
 				CD13A8B3256D648600D6EC61 /* AppModel.swift in Sources */,
+				CD49F33F256F36EA00C9B274 /* PackRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
