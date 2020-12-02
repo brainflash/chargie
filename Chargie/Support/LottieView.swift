@@ -17,8 +17,6 @@ struct LottieView: UIViewRepresentable {
 	@State var playState: Bool = false
 	/// The Chargie (object containing view & theme settings)
 	@ObservedObject var chargie: Chargie
-	/// The animation name
-	@Binding var name: String
 	/// Animation will play when true
 	@Binding var play: Bool
 	
@@ -82,14 +80,11 @@ struct LottieView: UIViewRepresentable {
 //}
 
 struct LottieView_Previews: PreviewProvider {
-	//	"39701-robot-bot-3d"
 	static var chargie: Chargie = .racing
-	static var name = Binding<String>.constant("33534-merry-christmas")
 	static var play = Binding<Bool>.constant(true)
 	
     static var previews: some View {
-		LottieView(chargie: chargie, name: name, play: play)
-//			.frame(width: 300, height: 300)
+		LottieView(chargie: chargie, play: play)
     }
 
 }

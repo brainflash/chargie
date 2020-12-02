@@ -37,6 +37,14 @@
 		CD49F33F256F36EA00C9B274 /* PackRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F33E256F36EA00C9B274 /* PackRow.swift */; };
 		CD49F345256F3ECA00C9B274 /* ChargiePack+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F344256F3ECA00C9B274 /* ChargiePack+SwiftUI.swift */; };
 		CD55C495256FC1B100320224 /* Chargie+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55C494256FC1B100320224 /* Chargie+SwiftUI.swift */; };
+		CD61A8FA25759EEA00F18465 /* AppModel+Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61A8F925759EEA00F18465 /* AppModel+Battery.swift */; };
+		CD61A90425768A3400F18465 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61A90325768A3400F18465 /* VisualEffectBlur.swift */; };
+		CD61A90A257690DA00F18465 /* UnlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61A909257690DA00F18465 /* UnlockButton.swift */; };
+		CD61A9102576911A00F18465 /* SquishableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61A90F2576911A00F18465 /* SquishableButtonStyle.swift */; };
+		CD61A9162576931B00F18465 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = CD61A9152576931B00F18465 /* Configuration.storekit */; };
+		CD61A91C25769B3C00F18465 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61A91B25769B3C00F18465 /* PreviewView.swift */; };
+		CD61A9262576B65700F18465 /* TestMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61A9252576B65700F18465 /* TestMenu.swift */; };
+		CD61A92C2576CDCB00F18465 /* ChargiePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61A92B2576CDCB00F18465 /* ChargiePreview.swift */; };
 		CDCC2AB4256FDEB2008F6002 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +131,14 @@
 		CD49F33E256F36EA00C9B274 /* PackRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackRow.swift; sourceTree = "<group>"; };
 		CD49F344256F3ECA00C9B274 /* ChargiePack+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChargiePack+SwiftUI.swift"; sourceTree = "<group>"; };
 		CD55C494256FC1B100320224 /* Chargie+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chargie+SwiftUI.swift"; sourceTree = "<group>"; };
+		CD61A8F925759EEA00F18465 /* AppModel+Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppModel+Battery.swift"; sourceTree = "<group>"; };
+		CD61A90325768A3400F18465 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		CD61A909257690DA00F18465 /* UnlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockButton.swift; sourceTree = "<group>"; };
+		CD61A90F2576911A00F18465 /* SquishableButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquishableButtonStyle.swift; sourceTree = "<group>"; };
+		CD61A9152576931B00F18465 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		CD61A91B25769B3C00F18465 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		CD61A9252576B65700F18465 /* TestMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMenu.swift; sourceTree = "<group>"; };
+		CD61A92B2576CDCB00F18465 /* ChargiePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargiePreview.swift; sourceTree = "<group>"; };
 		CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargey.release.xcconfig"; path = "Target Support Files/Pods-Chargey/Pods-Chargey.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,8 +235,10 @@
 				CD13A8BA256D65EE00D6EC61 /* ChargiePack */,
 				CD13A9C8256DEE7D00D6EC61 /* Support */,
 				CD49F259256E7B6900C9B274 /* ChargieView.swift */,
-				CD49F33E256F36EA00C9B274 /* PackRow.swift */,
+				CD61A92B2576CDCB00F18465 /* ChargiePreview.swift */,
 				CD49F26B256E8CE600C9B274 /* MenuView.swift */,
+				CD49F33E256F36EA00C9B274 /* PackRow.swift */,
+				CD61A91B25769B3C00F18465 /* PreviewView.swift */,
 				CD13A874256D2D6700D6EC61 /* ContentView.swift */,
 				CD13A872256D2D6700D6EC61 /* ChargieApp.swift */,
 				CD49F32B256F1F1500C9B274 /* Test */,
@@ -262,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				CD13A8B2256D648600D6EC61 /* AppModel.swift */,
+				CD61A8F925759EEA00F18465 /* AppModel+Battery.swift */,
 				CD13A8AD256D63D500D6EC61 /* Store.swift */,
 			);
 			path = Model;
@@ -310,8 +329,12 @@
 		CD13A9C8256DEE7D00D6EC61 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				CD61A90F2576911A00F18465 /* SquishableButtonStyle.swift */,
+				CD61A909257690DA00F18465 /* UnlockButton.swift */,
+				CD61A90325768A3400F18465 /* VisualEffectBlur.swift */,
 				CD49F317256F07BB00C9B274 /* Color+Extension.swift */,
 				CD13A9C9256DEE9E00D6EC61 /* LottieView.swift */,
+				CD61A9152576931B00F18465 /* Configuration.storekit */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -320,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				CD49F2DD256EE55500C9B274 /* TestView.swift */,
+				CD61A9252576B65700F18465 /* TestMenu.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -459,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD13A87A256D2D6800D6EC61 /* Preview Assets.xcassets in Resources */,
+				CD61A9162576931B00F18465 /* Configuration.storekit in Resources */,
 				CD3E3CD2256FD85600E45209 /* Chargies in Resources */,
 				CD13A877256D2D6800D6EC61 /* Assets.xcassets in Resources */,
 			);
@@ -540,10 +565,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD49F2DE256EE55500C9B274 /* TestView.swift in Sources */,
+				CD61A91C25769B3C00F18465 /* PreviewView.swift in Sources */,
 				CD55C495256FC1B100320224 /* Chargie+SwiftUI.swift in Sources */,
 				CD49F318256F07BB00C9B274 /* Color+Extension.swift in Sources */,
 				CD49F25A256E7B6900C9B274 /* ChargieView.swift in Sources */,
 				CD13A8C1256D690000D6EC61 /* ChargiePack+List.swift in Sources */,
+				CD61A9262576B65700F18465 /* TestMenu.swift in Sources */,
+				CD61A8FA25759EEA00F18465 /* AppModel+Battery.swift in Sources */,
+				CD61A92C2576CDCB00F18465 /* ChargiePreview.swift in Sources */,
+				CD61A90A257690DA00F18465 /* UnlockButton.swift in Sources */,
 				CD49F312256F072900C9B274 /* Chargie.swift in Sources */,
 				CD13A9CA256DEE9E00D6EC61 /* LottieView.swift in Sources */,
 				CD13A957256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */,
@@ -553,7 +583,9 @@
 				CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */,
 				CDCC2AB4256FDEB2008F6002 /* Intents.intentdefinition in Sources */,
 				CD13A873256D2D6700D6EC61 /* ChargieApp.swift in Sources */,
+				CD61A90425768A3400F18465 /* VisualEffectBlur.swift in Sources */,
 				CD49F326256F082100C9B274 /* Chargie+List.swift in Sources */,
+				CD61A9102576911A00F18465 /* SquishableButtonStyle.swift in Sources */,
 				CD49F345256F3ECA00C9B274 /* ChargiePack+SwiftUI.swift in Sources */,
 				CD13A8B3256D648600D6EC61 /* AppModel.swift in Sources */,
 				CD49F33F256F36EA00C9B274 /* PackRow.swift in Sources */,

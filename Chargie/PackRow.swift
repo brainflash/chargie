@@ -8,17 +8,85 @@
 import SwiftUI
 
 struct PackRow: View {
+	@EnvironmentObject private var store: Store
 	@ObservedObject var pack: ChargiePack
+	@Namespace private var namespace
+	
+	@Binding var selectedPack: ChargiePack?
 	
 	var clipShape = RoundedRectangle(cornerRadius: 10, style: .continuous)
+	
+	var blurView: some View {
+		#if os(iOS)
+		return VisualEffectBlur(blurStyle: .systemThinMaterialLight)
+		#else
+		return VisualEffectBlur()
+		#endif
+	}
 	
     var body: some View {
 		VStack(alignment: .leading) {
 			HStack {
-				ForEach(pack.chargies) { chargie in
-					
+				Text(pack.name)
+					.font(.headline)
+					.foregroundColor(.black)
+					.padding(.leading, 15)
+					.padding(.top, 5)
+
+				Spacer()
+				
+				if let product = store.product(for: pack.id) {
+					UnlockButton(product: .init(for: product), purchaseAction: {
+						store.purchaseProduct(product)
+					})
+				}
+			}
+			
+			ScrollView(.horizontal, showsIndicators: false) {
+				HStack {
+					ForEach(pack.chargies) { chargie in
+//						Button(action: { select(chargie: chargie) }) {
+//							ChargiePreview(pack: pack, chargie: chargie, style: .thumbnail)
+//								.frame(width: 96, height: 96)
+//								.matchedGeometryEffect(id: chargie.id, in: namespace, isSource: )
+//						}
+//						ChargiePreview(pack: pack, chargie: chargie, style: .thumbnail)
+						
+						Button(action: { selectedPack = pack; pack.selectedId = chargie.id } ) {
+							Image("\(pack.name)/\(chargie.imageName)")
+								.resizable()
+								.aspectRatio(contentMode: .fill)
+								.frame(width: 96, height: 96)
+								.clipShape(clipShape)
+								.accessibility(hidden: true)
+						}
+					}
+				}
+			}
+			.padding(8)
+		}
+		.listRowBackground(blurView
+							.clipped()
+							.cornerRadius(20.0)
+							.padding(8)
+		)
+		.padding(.vertical, 8)
+	}
+}
+
+struct PackRow_Previews: PreviewProvider {
+	static var selectedPack = Binding<ChargiePack?>.constant(.chargiePack1)
+	
+    static var previews: some View {
+		PackRow(pack: .chargiePack1, selectedPack: selectedPack)
+			.environmentObject(Store())
+    }
+}
+
+
 /*
-					
+	Video Thumbnails snippet
+	
 import AVKit
 
 //					let url = pack.videoURL(chargie)
@@ -46,43 +114,3 @@ import AVKit
 						}
 					}
 */
-					
-					
-					Image("\(pack.name)/\(chargie.imageName)")
-						.resizable()
-						.aspectRatio(contentMode: .fill)
-						.frame(width: 96, height: 96)
-						.clipShape(clipShape)
-//						.shadow(color: Color.white, radius: 2, x: -4, y: 4)
-						.overlay(clipShape
-									.inset(by: 1)
-									.stroke(Color.white, lineWidth: chargie.background == .black ? 2 : 0))
-						.accessibility(hidden: true)
-				}
-//				pack.images.forEach { image in
-//					image
-//						.resizable()
-//				}
-			}
-//			pack.image
-//				.resizable()
-//				.aspectRatio(contentMode: .fill)
-//				.frame(width: 96, height: 96)
-//				.clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-//				.accessibility(hidden: true)
-			
-			Text(pack.name)
-				.font(.headline)
-				.foregroundColor(.white)
-				.padding(.leading, 15)
-				.padding(.top, 5)
-		}
-		.listRowBackground(Color.black)
-    }
-}
-
-struct PackRow_Previews: PreviewProvider {
-    static var previews: some View {
-		PackRow(pack: .chargiePack1)
-    }
-}

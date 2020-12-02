@@ -1,0 +1,44 @@
+{
+  "products" : [
+    {
+      "displayPrice" : "0.00",
+      "familyShareable" : true,
+      "internalID" : "3BB73380",
+      "localizations" : [
+        {
+          "description" : "Free Pack",
+          "displayName" : "Chargie Pack 1",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "app.chargie.pack1",
+      "referenceName" : "Chargie Pack 1",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : true,
+      "internalID" : "220B5CB2",
+      "localizations" : [
+        {
+          "description" : "Futuristic & Gaming",
+          "displayName" : "Chargie Pack 2",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "app.chargie.pack2",
+      "referenceName" : "Chargie Pack 2",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}

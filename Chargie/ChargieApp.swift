@@ -10,11 +10,16 @@ import SwiftUI
 @main
 struct ChargieApp: App {
 	@StateObject private var model = AppModel()
-	
+	@StateObject private var store = Store()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
 				.environmentObject(model)
+				.environmentObject(store)
+				.onAppear() {
+					store.inject(model)
+				}
 				.onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
 					print(">>> Moved to the foreground!")
 				}

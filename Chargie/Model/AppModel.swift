@@ -8,15 +8,22 @@
 import Foundation
 import Combine
 
+
 class AppModel: ObservableObject {
 	@Published var chargiePacks = ChargiePack.all
 	@Published var appMode: AppMode = .normal
+	@Published var chargingStatus: String = ""
+	@Published var batteryLevel: String = ""
 
 	@Published var charging: Chargie		= .racing
 	@Published var disconnected: Chargie	= .amongus
 	
 	var chargie: Chargie {
 		appMode == .charging ? charging : disconnected
+	}
+	
+	init() {
+		self.startBatteryMonitor()
 	}
 
 //	@Published var chargingAnimation 		= "9678-colorfull-loading"

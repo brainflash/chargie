@@ -10,13 +10,9 @@ import SwiftUI
 struct ContentView: View {
 	@EnvironmentObject private var model: AppModel
 	
-	let animation = "36318-cat-preloader"
-
     var body: some View {
 		NavigationView {
-			
-			ChargieView(name: animation)
-			
+			ChargieView()
 		}
 		.onReceive(model.$appMode) { appMode in
 			// Animate navigation in normal mode
@@ -30,5 +26,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+			.environmentObject(AppModel())
     }
 }

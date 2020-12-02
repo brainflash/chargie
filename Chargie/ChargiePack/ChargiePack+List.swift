@@ -18,6 +18,12 @@ extension ChargiePack {
 		.chargiePack5
 	]
 	
+	static let emptyPack = ChargiePack(
+		id: "",
+		name: "Empty",
+		chargies: []
+	)
+	
 	// Free
 	static let chargiePack0 = ChargiePack(
 		id: "app.chargie.pack0",

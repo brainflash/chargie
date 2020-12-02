@@ -11,7 +11,6 @@ import SwiftUI
 
 struct TestView: View {
 	@EnvironmentObject private var model: AppModel
-	@State var name: String = ""
 	@State var play = false
 	@State var index = 0
 	@State var background = Color.black
@@ -49,7 +48,7 @@ struct TestView: View {
 				.edgesIgnoringSafeArea(.all)
 			
 			VStack {
-				LottieView(chargie: model.charging, name: $name, play: $play)
+				LottieView(chargie: model.charging, play: $play)
 //					.frame(width: 300, height: 300)
 
 				HStack {
@@ -69,7 +68,7 @@ struct TestView: View {
 				}
 				
 				HStack {
-					Text("\(name)")
+					Text("\(model.charging.name)")
 						.font(.headline)
 						.bold()
 						.foregroundColor(.white)
@@ -102,14 +101,12 @@ struct TestView: View {
 	func prev() {
 		let chargies = pack.chargies
 		index = (index <= 0 ? chargies.count - 1 : index - 1)
-		self.name = chargies[index].id
 		model.charging = chargies[index]
 	}
 	
 	func next() {
 		let chargies = pack.chargies
 		index = (index >= chargies.count - 1 ? 0 : index + 1)
-		self.name = chargies[index].id
 		model.charging = chargies[index]
 	}
 }
