@@ -30,6 +30,9 @@ extension Chargie {
 //		title: "Racing", attribution: "", url: ""
 	)
 	
+	static let catcoffee = Chargie(name: "catcoffee", id: "8175-catcoffee", background: Color(hex: 0xE4DDC5), speed: 1.0
+	)
+	
 	// MARK: -	Futuristic / Gaming
 	static let racing = Chargie(name: "racing", id: "6146-racing", background: Color(hex: 0x000000), speed: 1.0
 
@@ -48,7 +51,7 @@ extension Chargie {
 //		title: "Racing", attribution: "", url: ""
 	)
 
-	// MARK: -	Holidays
+	// MARK: -	Christmas
 	static let xmasbird = Chargie(name: "xmasbird", id: "39573-christmass-bird", background: Color(hex: 0xFDFB67), speed: 0.5
 //		sound:
 //		title: "Racing", attribution: "", url: ""

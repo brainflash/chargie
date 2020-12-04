@@ -10,6 +10,7 @@ import SwiftUI
 struct ChargieView: View {
 	@EnvironmentObject private var model: AppModel
 	@State var isShowingMainView = false
+	@State var isExitButtonPresented = false
 //	@State var name: String
 	@State var play = false
 	
@@ -25,6 +26,16 @@ struct ChargieView: View {
 				.edgesIgnoringSafeArea(.all)
 			
 			VStack {
+				
+//				VStack(alignment: .trailing) {
+//					Button(action: { model.appMode = .normal }) {
+//						Text("Exit")
+//							.font(.headline)
+//							.bold()
+//							.foregroundColor(Color.white)
+//					}
+//				}
+				
 				LottieView(chargie: chargie, play: $play)
 //					.frame(width: 300, height: 300)
 				
@@ -45,6 +56,12 @@ struct ChargieView: View {
 
 			}
 		}
+		.overlay(ExitButton(isOn: $isExitButtonPresented) {
+			model.appMode = .normal
+		}.animation(.easeInOut(duration: 0.25)), alignment: .topTrailing)
+		.onTapGesture {
+			isExitButtonPresented.toggle()
+		}
 		.background(Color.blue)
 		.onReceive(model.$appMode) { appMode in
 			
@@ -53,13 +70,9 @@ struct ChargieView: View {
 				self.play = false
 				isShowingMainView = true
 			case .charging:
-//				self.chargie = model.charging
-//				self.name = model.chargingAnimation
 				self.play = true
 				isShowingMainView = false
 			case .disconnected:
-//				self.chargie = model.disconnected
-//				self.name = model.disconnectedAnimation
 				self.play = true
 				isShowingMainView = false
 			}

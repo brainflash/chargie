@@ -46,6 +46,11 @@ extension ChargiePack {
 		guard selectedId != "" else { return nil }
 		return self.chargies.filter { $0.id == selectedId }.first ?? nil
 	}
+	
+	var selectedChargieIndex: Int {
+		guard selectedId != "" else { return -1 }
+		return self.chargies.firstIndex(where: { $0.id == selectedId })!
+	}
 
 }
 

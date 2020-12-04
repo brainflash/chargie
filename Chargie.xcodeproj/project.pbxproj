@@ -26,6 +26,7 @@
 		CD13A957256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */; };
 		CD13A958256D902B00D6EC61 /* NSUserActivity+IntentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */; };
 		CD13A9CA256DEE9E00D6EC61 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD13A9C9256DEE9E00D6EC61 /* LottieView.swift */; };
+		CD21B4612579815100E082A5 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD21B4602579815100E082A5 /* ExitButton.swift */; };
 		CD3E3CD2256FD85600E45209 /* Chargies in Resources */ = {isa = PBXBuildFile; fileRef = CD3E3CD1256FD85600E45209 /* Chargies */; };
 		CD49F25A256E7B6900C9B274 /* ChargieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F259256E7B6900C9B274 /* ChargieView.swift */; };
 		CD49F26C256E8CE600C9B274 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49F26B256E8CE600C9B274 /* MenuView.swift */; };
@@ -120,6 +121,7 @@
 		CD13A932256D807A00D6EC61 /* AnimationIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationIntentHandler.swift; sourceTree = "<group>"; };
 		CD13A956256D902B00D6EC61 /* NSUserActivity+IntentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserActivity+IntentData.swift"; sourceTree = "<group>"; };
 		CD13A9C9256DEE9E00D6EC61 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		CD21B4602579815100E082A5 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
 		CD3E3CD1256FD85600E45209 /* Chargies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chargies; sourceTree = "<group>"; };
 		CD49F259256E7B6900C9B274 /* ChargieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargieView.swift; sourceTree = "<group>"; };
 		CD49F26B256E8CE600C9B274 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				CD61A90F2576911A00F18465 /* SquishableButtonStyle.swift */,
+				CD21B4602579815100E082A5 /* ExitButton.swift */,
 				CD61A909257690DA00F18465 /* UnlockButton.swift */,
 				CD61A90325768A3400F18465 /* VisualEffectBlur.swift */,
 				CD49F317256F07BB00C9B274 /* Color+Extension.swift */,
@@ -583,6 +586,7 @@
 				CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */,
 				CDCC2AB4256FDEB2008F6002 /* Intents.intentdefinition in Sources */,
 				CD13A873256D2D6700D6EC61 /* ChargieApp.swift in Sources */,
+				CD21B4612579815100E082A5 /* ExitButton.swift in Sources */,
 				CD61A90425768A3400F18465 /* VisualEffectBlur.swift in Sources */,
 				CD49F326256F082100C9B274 /* Chargie+List.swift in Sources */,
 				CD61A9102576911A00F18465 /* SquishableButtonStyle.swift in Sources */,

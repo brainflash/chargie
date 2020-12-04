@@ -56,7 +56,7 @@ extension ChargiePack {
 	static let chargiePack4 = ChargiePack(
 		id: "app.chargie.pack4",
 		name: "Animals",
-		chargies: [.animals]
+		chargies: [.animals, .catcoffee]
 	)
 
 	// Charging

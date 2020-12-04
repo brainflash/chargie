@@ -9,6 +9,10 @@ import SwiftUI
 
 struct PreviewView: View {
 	@EnvironmentObject private var model: AppModel
+	@Environment(\.presentationMode) var presentation
+	
+	@State var showingActionSheet = false
+	@State var isExitButtonPresented = false
 
 	@State var play = false
 	@State var index = 0
@@ -26,22 +30,23 @@ struct PreviewView: View {
 					.edgesIgnoringSafeArea(.all)
 
 				HStack {
-					Button(action: { prev() } ) {
-						Image(systemName: "arrowtriangle.left.fill")
-							.foregroundColor(.black)
-							.imageScale(.large)
-					}
-					.padding(16)
+//					Button(action: { prev() } ) {
+//						Image(systemName: "arrowtriangle.left.fill")
+//							.renderingMode(.template)
+//							.foregroundColor(.white)
+//							.imageScale(.large)
+//					}
+//					.padding(16)
 					
 					LottieView(chargie: chargie, play: $play)
 					
-					Button(action: { next() } ) {
-						Image(systemName: "arrowtriangle.right")
-							.foregroundColor(.black)
-							.background(Color.white)
-							.imageScale(.large)
-					}
-					.padding(16)
+//					Button(action: { next() } ) {
+//						Image(systemName: "arrowtriangle.right.fill")
+//							.renderingMode(.template)
+//							.foregroundColor(.white)
+//							.imageScale(.large)
+//					}
+//					.padding(16)
 				}
 			}
 		} else {
@@ -54,48 +59,94 @@ struct PreviewView: View {
 		}
 	}
 	
+	var minWidth: CGFloat {
+		return 80
+	}
+	
+	var setButton: some View {
+		Button(action: { self.showingActionSheet = true} ) {
+			Text("Set")
+				.font(.subheadline)
+				.bold()
+				.foregroundColor(Color.white)
+				.padding(.horizontal, 16)
+				.padding(.vertical, 8)
+				.frame(minWidth: minWidth)
+				.background(Color.blue)
+				.clipShape(Capsule())
+				.contentShape(Rectangle())
+		}
+	}
+
     var body: some View {
 		VStack {
-			chargieView
-			
+			VStack {
+				chargieView
+
+//				HStack(alignment: .bottom) {
+//					Text("Preview View: \(pack.name)")
+//						.padding(6)
+//
+//					Text("Selected Chargie: \(pack.selectedId)")
+//						.padding(6)
+//				}
+			}
+
 			ZStack {
 				Color.black
 					.edgesIgnoringSafeArea(.all)
-			
-				HStack {
-					Spacer()
-					
-					Button("Set Charging") {
-						model.appMode = .charging
-					}
-					.foregroundColor(.white)
-					.font(.headline)
-					.padding()
-					
-					Spacer()
-					
-					Button("Set Disconnected") {
-						model.appMode = .disconnected
-					}
-					.padding()
-					.font(.headline)
-					.foregroundColor(.white)
 
+				VStack {
 					Spacer()
+					
+					setButton
+					
+					HStack {
+						
+						Spacer()
+						
+						Button("Set Charging") {
+							model.appMode = .charging
+						}
+						.foregroundColor(.white)
+						.font(.headline)
+						.padding()
+						
+						Spacer()
+						
+						Button("Set Disconnected") {
+							model.appMode = .disconnected
+						}
+						.padding()
+						.font(.headline)
+						.foregroundColor(.white)
+
+						Spacer()
+					}
 				}
 			}
 			.frame(maxHeight: 80)
 
-			VStack {
-				Text("Preview View: \(pack.name)")
-					.padding()
-				
-				Text("Selected Chargie: \(pack.selectedId)")
-					.padding()
-			}
+
 		}
 		.onAppear() {
 			self.chargie = pack.selectedChargie
+			self.index = pack.selectedChargieIndex
+		}
+		.overlay(ExitButton(isOn: $isExitButtonPresented, fadeOut: false) {
+			isExitButtonPresented.toggle();
+			self.presentation.wrappedValue.dismiss()
+		}.animation(.easeInOut(duration: 0.25)), alignment: .topTrailing)
+		.onTapGesture {
+			isExitButtonPresented.toggle()
+		}
+		.actionSheet(isPresented: $showingActionSheet) {
+			ActionSheet(title: Text("Hello"), buttons: [
+				.default(Text("Set Charging")) { model.charging = chargie! },
+				.default(Text("Set Disconnected")) { model.disconnected = chargie! },
+				.default(Text("Set Both")) { model.charging = chargie!; model.disconnected = chargie! },
+				.cancel()
+			])
 		}
     }
 	
