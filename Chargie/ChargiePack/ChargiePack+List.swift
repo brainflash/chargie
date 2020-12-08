@@ -11,11 +11,11 @@ import Foundation
 
 extension ChargiePack {
 	static let all: [ChargiePack] = [
+		.chargiePack0,
 		.chargiePack1,
 		.chargiePack2,
 		.chargiePack3,
-		.chargiePack4,
-		.chargiePack5
+		.chargiePack4
 	]
 	
 	static let emptyPack = ChargiePack(
@@ -25,6 +25,7 @@ extension ChargiePack {
 	)
 	
 	// Free
+	// Charging
 	static let chargiePack0 = ChargiePack(
 		id: "app.chargie.pack0",
 		name: "Free",
@@ -59,11 +60,5 @@ extension ChargiePack {
 		chargies: [.animals, .catcoffee]
 	)
 
-	// Charging
-	static let chargiePack5 = ChargiePack(
-		id: "app.chargie.pack5",
-		name: "Charging",
-		chargies: [.progress, .progressColor]
-	)
 
 }

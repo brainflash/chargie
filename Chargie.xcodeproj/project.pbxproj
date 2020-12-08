@@ -46,6 +46,8 @@
 		CD61A91C25769B3C00F18465 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61A91B25769B3C00F18465 /* PreviewView.swift */; };
 		CD61A9262576B65700F18465 /* TestMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61A9252576B65700F18465 /* TestMenu.swift */; };
 		CD61A92C2576CDCB00F18465 /* ChargiePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61A92B2576CDCB00F18465 /* ChargiePreview.swift */; };
+		CD70B07F257E7F1C006D7A2E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD70B07E257E7F1C006D7A2E /* SettingsView.swift */; };
+		CD70B087257E8E4D006D7A2E /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD70B086257E8E4D006D7A2E /* HelpView.swift */; };
 		CDCC2AB4256FDEB2008F6002 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CD13A923256D7F4800D6EC61 /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +143,8 @@
 		CD61A91B25769B3C00F18465 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		CD61A9252576B65700F18465 /* TestMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMenu.swift; sourceTree = "<group>"; };
 		CD61A92B2576CDCB00F18465 /* ChargiePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargiePreview.swift; sourceTree = "<group>"; };
+		CD70B07E257E7F1C006D7A2E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CD70B086257E8E4D006D7A2E /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		CDFAEC3E8C13ED1002011BFC /* Pods-Chargey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chargey.release.xcconfig"; path = "Target Support Files/Pods-Chargey/Pods-Chargey.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +246,8 @@
 				CD49F33E256F36EA00C9B274 /* PackRow.swift */,
 				CD61A91B25769B3C00F18465 /* PreviewView.swift */,
 				CD13A874256D2D6700D6EC61 /* ContentView.swift */,
+				CD70B086257E8E4D006D7A2E /* HelpView.swift */,
+				CD70B07E257E7F1C006D7A2E /* SettingsView.swift */,
 				CD13A872256D2D6700D6EC61 /* ChargieApp.swift */,
 				CD49F32B256F1F1500C9B274 /* Test */,
 				CD13A876256D2D6800D6EC61 /* Assets.xcassets */,
@@ -584,10 +590,12 @@
 				CD13A8AE256D63D500D6EC61 /* Store.swift in Sources */,
 				CD49F26C256E8CE600C9B274 /* MenuView.swift in Sources */,
 				CD13A875256D2D6700D6EC61 /* ContentView.swift in Sources */,
+				CD70B087257E8E4D006D7A2E /* HelpView.swift in Sources */,
 				CDCC2AB4256FDEB2008F6002 /* Intents.intentdefinition in Sources */,
 				CD13A873256D2D6700D6EC61 /* ChargieApp.swift in Sources */,
 				CD21B4612579815100E082A5 /* ExitButton.swift in Sources */,
 				CD61A90425768A3400F18465 /* VisualEffectBlur.swift in Sources */,
+				CD70B07F257E7F1C006D7A2E /* SettingsView.swift in Sources */,
 				CD49F326256F082100C9B274 /* Chargie+List.swift in Sources */,
 				CD61A9102576911A00F18465 /* SquishableButtonStyle.swift in Sources */,
 				CD49F345256F3ECA00C9B274 /* ChargiePack+SwiftUI.swift in Sources */,

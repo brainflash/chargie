@@ -10,12 +10,22 @@ import SwiftUI
 struct MenuView: View {
 	@EnvironmentObject private var model: AppModel
 	@State var isShowingPreviewView = false
+	@State var activeSheet: ActiveSheet?
 	@State var selectedPack: ChargiePack?
+	
+	enum ActiveSheet: Identifiable {
+		case settings, help
+		
+		var id: Int {
+			hashValue
+		}
+	}
 	
 	init() {
 		UITableViewCell.appearance().backgroundColor = .clear
 		UITableView.appearance().backgroundColor = .clear
 		UITableView.appearance().separatorStyle = .none
+		UINavigationBar.appearance().tintColor = .white
 	}
 	
 	var blurView: some View {
@@ -28,6 +38,8 @@ struct MenuView: View {
 	
     var body: some View {
 		VStack {
+//			NavigationLink(destination: SettingsView(), isActive: $isShowingSettingsView) { EmptyView() }
+
 			NavigationLink(destination: PreviewView(pack: selectedPack ?? .emptyPack, chargie: selectedPack?.selectedChargie), isActive: $isShowingPreviewView) { EmptyView() }
 			
 			List {
@@ -47,6 +59,31 @@ struct MenuView: View {
 						.edgesIgnoringSafeArea(.all)
 						.scaledToFill())
 		.preferredColorScheme(.dark)		// white status bar tint
+		.navigationBarItems(trailing:
+			HStack {
+				Button(action: { activeSheet = .help }) {
+					HStack {
+						Image(systemName: "book").imageScale(.large)
+					}.frame(width: 40, height: 40)
+				}
+				.accessibility(label: Text("Help"))
+				
+				Button(action: { activeSheet = .settings }) {
+					HStack {
+						Image(systemName: "gear").imageScale(.large)
+					}.frame(width: 40, height: 40)
+				}
+				.accessibility(label: Text("Settings"))
+			}
+		)
+		.sheet(item: $activeSheet) { item in
+			switch item {
+			case .settings:
+				SettingsView()
+			case .help:
+				HelpView()
+			}
+		}
 		.navigationBarHidden(false)
 		.navigationBarBackButtonHidden(true)
 		.navigationTitle("Chargie")

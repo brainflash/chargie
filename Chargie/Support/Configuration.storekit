@@ -7,6 +7,21 @@
       "localizations" : [
         {
           "description" : "Free Pack",
+          "displayName" : "Chargie Pack Free",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "app.chargie.pack0",
+      "referenceName" : "Chargie Pack 0",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : true,
+      "internalID" : "220B5CB2",
+      "localizations" : [
+        {
+          "description" : "Futuristic & Gaming",
           "displayName" : "Chargie Pack 1",
           "locale" : "en_US"
         }
@@ -17,12 +32,12 @@
     },
     {
       "displayPrice" : "1.99",
-      "familyShareable" : true,
-      "internalID" : "220B5CB2",
+      "familyShareable" : false,
+      "internalID" : "27097197",
       "localizations" : [
         {
-          "description" : "Futuristic & Gaming",
-          "displayName" : "Chargie Pack 2",
+          "description" : "Christmas themed charging screens",
+          "displayName" : "Christmas",
           "locale" : "en_US"
         }
       ],
