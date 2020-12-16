@@ -77,6 +77,21 @@ struct PreviewView: View {
 				.contentShape(Rectangle())
 		}
 	}
+	
+	var sleepButton: some View {
+		Button(action: { ChargieApp.sendToSleep() } ) {
+			Text("Sleep")
+				.font(.subheadline)
+				.bold()
+				.foregroundColor(Color.white)
+				.padding(.horizontal, 16)
+				.padding(.vertical, 8)
+				.frame(minWidth: minWidth)
+				.background(Color.blue)
+				.clipShape(Capsule())
+				.contentShape(Rectangle())
+		}
+	}
 
     var body: some View {
 		VStack {
@@ -99,7 +114,17 @@ struct PreviewView: View {
 				VStack {
 					Spacer()
 					
-					setButton
+					HStack {
+						Spacer()
+
+						setButton
+						
+						Spacer()
+						
+						sleepButton
+						
+						Spacer()
+					}
 					
 					HStack {
 						

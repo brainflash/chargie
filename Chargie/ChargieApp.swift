@@ -37,4 +37,8 @@ struct ChargieApp: App {
 				}
         }
     }
+	
+	static func sendToSleep() {
+		UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+	}
 }
